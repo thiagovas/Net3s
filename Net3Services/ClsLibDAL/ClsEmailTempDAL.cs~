@@ -1,0 +1,11 @@
+namespace ClsLibDAL
+{
+    public class ClsEmailTempDAL
+    {
+       /// <summary>
+       /// Método que insere o e-mail de uma pessoa interessada em usar o Net3s.
+       /// </summary>
+       public void InserirEmail(string email)
+       {}
+    }
+}

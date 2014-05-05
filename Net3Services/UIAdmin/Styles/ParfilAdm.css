@@ -1,0 +1,235 @@
+﻿body 
+{
+    margin: 0 0;
+}
+
+.Tudo
+{
+    position: absolute;
+    z-index: 500;
+    background-image: url(/Styles/img/fundoN3S.png);
+    width: 100%;
+    height: 20%;
+}
+
+.Img
+{
+    position: absolute;
+    z-index: 500;
+    left: 5%;
+    top: 5%;
+}
+
+.Menu
+{
+    position: absolute;
+    z-index: 500;
+    left: 72%;
+    top: 7%;
+    font-family: Lucida Bright, Arial, Verdana;
+    color: #FFFFFF;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a:hover{color: Orange;}
+
+.Titulo
+{
+    position: absolute;
+    z-index: 500;
+    font-family: Lucida Bright, Arial, Verdana;
+    font-size: 30px;
+    color: #FFFFFF;
+    left: 15%;
+    top: 50%;
+}
+
+.link
+{
+    color: #FFFFFF;
+    font-family: Lucida Bright, Arial, Verdana;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.corpo
+{
+    position: absolute;
+    z-index: 500;
+    top: 25%;
+    width: 100%;
+}
+
+.rodape
+{
+    position: absolute;
+    z-index: 500;
+    height: 12%;
+    width: 100%;
+    background-image: url(/Styles/img/fundoN3S.png);
+    text-align: center;
+    font-family: Lucida Bright, Arial, Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    left: 0%;
+    top: 120%;
+    color: #FFFFFF;
+}
+
+.MenuA
+{
+    position: absolute;
+    z-index: 400;
+    top: 0%;
+    width: 100%;
+}
+
+.Man
+{
+    position: absolute;
+    z-index: 400;
+    left: 0%;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+    background-image: url(menu/bg.gif);
+    background-repeat: repeat-x;
+}
+
+
+.MenuAtl
+{
+    width: 50%;
+    height: 60%;
+    z-index: 500;
+    left: 25%;
+    position: absolute;
+}
+
+.Atit
+{
+    width: 100%;
+    height: 30px;
+    background-color: #330033;
+    color: White;
+    font-family: Lucida Bright, Arial, Verdana;
+    font-size: 18px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 5px;
+}
+
+.DescA
+{
+    width: 100%;
+    background-color: #CCCCCC;
+    color: black;
+    font-family: Lucida Bright, Arial, Verdana;
+    font-size: 12px;
+    display: none;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+}
+
+.mongo
+{
+    position: absolute;
+    z-index: 500;
+    left: 80%;
+    top: 20%;
+}
+
+
+
+
+/* Estilos para os botões do sistema SEM ICONE */
+
+.botoesN3s {
+    background: url('IMG/fundoBotao.gif') no-repeat right top;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    min-height: 24px;
+    max-height: 24px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+.botoesN3s span 
+{
+    background: transparent url('IMG/fundoBotao_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+    outline: none;
+}
+
+.botoesN3s:active 
+{
+    background-position: bottom right;
+    color: #000;
+}
+
+.botoesN3s:active span 
+{
+    background-position: bottom left;
+    padding: 6px 0 4px  18px; /* empura o texto para baixo em 1px */
+}
+
+
+/* Estilos para os botões do sistema COM ICONE */
+
+.botoesN3sIco {
+    background: transparent url(IMG/fundoBotao.gif) no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    min-height: 24px;
+    max-height: 24px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+.botoesN3sIco span 
+{
+    background: transparent url('IMG/fundoBotao_span.gif') no-repeat;
+    display: block;
+    line-height: 13px;
+    padding: 5px 0 5px 18px;
+    outline: none;
+}
+
+.botoesN3sIco:active 
+{
+    background-position: bottom right;
+    color: #000;
+}
+
+.botoesN3sIco:active span 
+{
+    background-position: bottom left;
+    padding: 6px 0 4px  18px; /* empura o texto para baixo em 1px */
+}
+
+.botoesN3sIco span img
+{
+    width: 12px;
+    min-width: 12px;
+    max-width: 12px;
+    height: 12px;
+    max-height: 12px;
+    min-height: 12px;
+    padding-right: 2px;
+    border: none;
+}

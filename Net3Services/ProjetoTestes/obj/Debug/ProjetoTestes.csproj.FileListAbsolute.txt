@@ -1,0 +1,100 @@
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\ProjetoTestes.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\ProjetoTestes.pdb
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\ClsLibBLL.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\ClsLibDAL.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\Models.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\MongoDB.Driver.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\Chrisimos.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\MongoDB.GridFS.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\ClsLibBLL.pdb
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\ClsLibDAL.pdb
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\Models.pdb
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\obj\Debug\ProjetoTestes.dll
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\obj\Debug\ProjetoTestes.pdb
+C:\Users\Thiago\Thiago\NET3Services\NET3S\NET3Services\ProjetoTestes\bin\Debug\MongoDB.Linq.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\obj\Debug\ResolveAssemblyReference.cache
+D:\projetos\Net3Services - em uso\ProjetoTestes\obj\Debug\ProjetoTestes.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ProjetoTestes.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ProjetoTestes.pdb
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ClsLibBLL.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ClsLibDAL.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\Models.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\MongoDB.Driver.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\MongoDB.GridFS.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\MongoDB.Linq.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\Chrisimos.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ClsLibBLL.pdb
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ClsLibDAL.pdb
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\Models.pdb
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.dll
+D:\projetos\Net3Services - em uso\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.pdb
+D:\projetos\Net3Services - em uso\ProjetoTestes\obj\Debug\ProjetoTestes.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\obj\Debug\ProjetoTestes.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ProjetoTestes.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ProjetoTestes.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ClsLibBLL.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ClsLibDAL.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\Models.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\MongoDB.Driver.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\MongoDB.GridFS.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\MongoDB.Linq.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\Chrisimos.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ClsLibBLL.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ClsLibDAL.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\Models.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SFINAL\ProjetoTestes\obj\Debug\ProjetoTestes.pdb
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ProjetoTestes.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ProjetoTestes.pdb
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ClsLibBLL.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\Models.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\MongoDB.Driver.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\MongoDB.GridFS.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\MongoDB.Linq.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\Chrisimos.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ClsLibBLL.pdb
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL.pdb
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\Models.pdb
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.pdb
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\obj\Debug\ProjetoTestes.dll
+C:\Users\Breno\Desktop\Net3Services\ProjetoTestes\obj\Debug\ProjetoTestes.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ProjetoTestes.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ProjetoTestes.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ClsLibBLL.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ClsLibDAL.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\Models.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\MongoDB.Driver.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\MongoDB.GridFS.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\MongoDB.Linq.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\Chrisimos.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ClsLibBLL.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ClsLibDAL.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\Models.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.pdb
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\obj\Debug\ProjetoTestes.dll
+C:\Users\Marcio\Documents\Visual Studio 2010\Projects\NET3SOFICIAL\ProjetoTestes\obj\Debug\ProjetoTestes.pdb
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ProjetoTestes.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ProjetoTestes.pdb
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ClsLibBLL.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\Models.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\MongoDB.Driver.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\MongoDB.GridFS.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\MongoDB.Linq.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\Chrisimos.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ClsLibBLL.pdb
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL.pdb
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\Models.pdb
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\bin\Debug\ClsLibDAL_Accessor.pdb
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\obj\Debug\ProjetoTestes.dll
+C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\ProjetoTestes\obj\Debug\ProjetoTestes.pdb

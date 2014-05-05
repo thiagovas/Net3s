@@ -1,0 +1,38 @@
+﻿/* Editar Serviço */
+#tudo
+{
+    background:url('img/body_bg.jpg') repeat-x left bottom #e5e5e5;
+}
+
+#tudo h1,
+#tudo p{
+	font:26px/1 'Cuprum','Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	background:url('img/header_bg.jpg') repeat-x left bottom #f5f5f5;
+	padding: 18px 25px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+	color:#666;
+}
+
+#tudo h1{
+	letter-spacing:0.3px;
+	color:#888;
+}
+
+#tudo h1 i
+{
+    margin-right: 10px;
+}
+
+#tudo p{
+	background:none;
+	font-size:14px;
+	line-height:1.4;
+	padding-top: 35px;
+}
+
+#tudo #btn
+{
+    display: block;
+    margin-top: 160px;
+    margin-left: 20px;
+}

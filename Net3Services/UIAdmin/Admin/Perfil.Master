@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Perfil.master.cs" Inherits="UIAdmin.Perfil" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="../Styles/ParfilAdm.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/menuh.css" />
+    <script type="text/javascript" src="../Scripts/jquery-1.6.2.min.js"></script>
+    <link rel="Stylesheet" type="text/css" href="../Styles/CadasAdm.css" />
+    <link rel="Stylesheet" type="text/css" href="../Styles/menu/menu_style.css" />
+    <script type="text/jscript" src="../Scripts/Accordion.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-modal-1.0.js"></script>
+    <link href="../Styles/lightBox.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Salsa' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Salsa' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <form id="form1" method="post" enctype="multipart/form-data" runat="server">
+     <div class="Tudo" id="top">
+        <div class="Img">
+            <asp:ImageButton href="Perfil.aspx" ID="Image1" runat="server" Width="200px" Height="100px" ImageUrl="../Styles/img/logoADM.png" />
+        </div>
+        <div class="Menu">
+            <asp:Label runat="server" ID="LblEmail" Text=""></asp:Label> |  
+            <a href="" id="LkConf" class="link">Configurações</a> | 
+            <asp:LinkButton runat="server" id="LkSair" CssClass="link" 
+                onclick="LkSair_Click">Sair</asp:LinkButton>
+        </div>
+        <div class="Man" id="MenuMain">
+            <div class="MenuA">
+                <div class="nav">
+                    <div class="table">
+                        <ul class="select">
+                            <li><a href="Perfil.aspx" target="_self"><b>Home</b></a></li>
+                        </ul>
+                        <ul class="select">
+                            <li><a href="" target="_self"><b>Administrador</b></a>
+                                <div class="select_sub">
+                                    <ul class="sub">
+                                        <li><a href="CadastroAdm.aspx">Cadastro</a></li>
+                                        <li><a href="#" target="_self">Listagem</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="select">
+                            <li><a href="#" target="_self"><b>Denuncias</b></a></li>
+                        </ul>
+                        <ul class="select">
+                            <li><a href="CadEnderecos.aspx" target="_self"><b>Endereços</b></a></li>
+                        </ul>
+                        <ul class="select">
+                            <li><a href="#" target="_self"><b>Relatorios</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="corpo">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="rodape">
+            <div class="mongo">
+                <b>Powered By</b>
+                <br />
+                <img src="../Styles/img/mongo.png" alt="Powered By MongoDB" width="100px" height="40px" />
+            </div>
+            <center>
+                <p>Copyright (c) 2011 - NET3 Services. Todos os direitos reservados.</p>
+            </center>
+    </div>
+    </form>
+</body>
+</html>

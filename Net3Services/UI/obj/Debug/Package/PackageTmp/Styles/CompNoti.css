@@ -1,0 +1,52 @@
+﻿body {
+}
+
+.bottomSpan
+{
+    
+}
+
+.imagem
+{
+   float: left;
+   margin: 2px;
+}
+
+.nullConteudo
+{
+    text-align: center;   
+}
+
+.fullConteudo p
+{
+    text-align: justify;
+    padding: 0px 4px 0px 4px;
+    font: normal normal normal 12px normal Arial, Calibri, Times New Roman;
+    color: #330033;
+}
+
+.fullConteudo p:hover
+{
+    text-align: justify;
+    padding: 0px 4px 0px 4px;
+    font: normal normal normal 12px normal Arial, Calibri, Times New Roman;
+    color: #FFFFFF;
+    background-color: #330033;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #FFFFFF;
+    text-decoration: none;    
+}
+
+h4
+{
+    font: normal normal bold 12px normal Arial, Calibri, Times New Roman;
+    color: #330033;
+}

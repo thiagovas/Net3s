@@ -1,0 +1,151 @@
+﻿#visuAtualizacoes h1
+{
+  font-family: Verdana, sans-serif;
+  color: #3f3f3f;
+}
+
+/* Usado quando nao for um link */
+#visuAtualizacoes .listar
+{
+    text-align: left;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3f3f3f;
+    height: 100px;
+    padding-bottom: 15px;
+}
+
+#visuAtualizacoes .listar .conteudo .img
+{
+    padding-left: 25px;
+}
+
+#visuAtualizacoes .listar .conteudo .icone
+{
+    padding-left: 25px;
+}
+
+#visuAtualizacoes .listar .conteudo .icone2
+{
+    padding-left: 25px;
+}
+
+#visuAtualizacoes .listar .conteudo .icone3
+{
+    padding-left: 25px;
+}
+
+#visuAtualizacoes .atualizacao
+{
+    text-align: left;
+    opacity: 0.5;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3f3f3f;
+    height: 70px;
+    padding-bottom: 15px;
+}
+
+#visuAtualizacoes .atualizacao:hover
+{
+    opacity: 1.0;
+}
+
+.conteudo
+{
+    width: auto;
+    float: right;
+}
+
+.conteudo .icone
+{
+    font-family: WebSymbolsRegular;
+    margin: 5px auto;
+    margin-right: 10px;
+	font-size: 40px;
+    display:block;
+    float: left;
+}
+
+.conteudo .icone2
+{
+    font-family: ModernPictogramsNormal;
+    margin: 5px auto;
+    margin-right: 10px;
+	font-size: 55px;
+    display:block;
+    float: left;
+}
+
+.conteudo .icone3
+{
+    font-family: RaphaelIcons;
+    margin: 5px auto;
+    margin-right: 10px;
+	font-size: 60px;
+    display:block;
+    float: left;
+}
+
+.conteudo .img
+{
+    margin: 5px auto;
+    margin-right: 10px;
+	font-size: 40px;
+    display:block;
+    float: left;
+    height: 60px;
+    width: 60px;
+}
+
+.conteudo .nome
+{
+    display: block;
+    float: left;
+    font-size: 17px;
+    color: #5C294A;
+    text-decoration: none;
+    width: auto;
+    font-weight: bold;
+}
+
+.conteudo .data
+{
+    color: #3f3f3f;
+    width: auto;
+    display: block;
+    float: right;
+}
+
+.conteudo .estrelas
+{
+    font-size: 18px;
+    color: #3f3f3f;
+    width: auto;
+    display: block;
+    float: right;
+}
+
+.conteudo .mensagem
+{
+    color: #3f3f3f;
+    width: 700px;
+}
+
+.conteudo .botoes
+{
+    margin-top: 8px;
+    width: 700px;
+}
+
+
+
+
+
+
+
+
+
+

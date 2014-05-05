@@ -1,0 +1,95 @@
+﻿.usuario
+{
+    margin-left: 5px;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3f3f3f;
+    height: 70px;
+    padding-bottom: 5px;
+}
+.usuario h2
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.usuario .foto
+{
+    float: left;
+    height: 60px;
+    width: 60px;
+    max-height: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    border-radius: 5px;
+    padding: 3px;
+	background: #EEE9E9; 
+    border: 2px solid #3f3f3f;
+}
+.usuario .foto a
+{
+    text-decoration: none;
+}
+.usuario .foto:hover
+{
+   -webkit-animation-name: purpleNetwork;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-iteration-count: 1;  
+    
+   border: #9370DB solid 2px; 
+   -webkit-box-shadow: 0 0 18px #7B68EE; 
+   -moz-box-shadow: 0 0 18px #7B68EE; 
+   box-shadow: 0 0 18px #7B68EE;
+}
+.usuario .email
+{
+    float: left;
+    font-size: 15px;
+    font-family: 'Rokkitt' , serif;
+    color: #5C294A;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.usuario .nome a
+{
+    float: left;
+    font-size: 17px;
+    font-family: 'Salsa' , cursive, Arial, Helvetica, sans-serif;
+    color: #5C294A;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.usuario .nome a:hover
+{
+    color: #7B68EE;
+}
+
+@-webkit-keyframes purpleNetwork 
+{
+    from  
+    {
+        background-color: #EEE9E9;
+        border: 2px solid #3f3f3f; 
+    }
+    to  
+    {
+        border: #9370DB solid 2px; 
+        -webkit-box-shadow: 0 0 18px #7B68EE; 
+        -moz-box-shadow: 0 0 18px #7B68EE; 
+        box-shadow: 0 0 18px #7B68EE;
+    }
+}
+
+
+
+
+
+
+
+
+

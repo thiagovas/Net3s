@@ -1,0 +1,16 @@
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\bin\Debug\BoletoNet.Arquivo.exe
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\bin\Debug\BoletoNet.Arquivo.pdb
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\bin\Debug\Boleto.Net.dll
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\bin\Debug\Boleto.Net.pdb
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\ResolveAssemblyReference.cache
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.EnviarEmail.resources
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.FormVisualizarImagem.resources
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.ImpressaoBoleto.resources
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.Main.resources
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.NBoleto.resources
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.Progresso.resources
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.Properties.Resources.resources
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\ResGen.read.1.tlog
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\ResGen.write.1.tlog
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.exe
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Codigo-fonte-boleto.net\boletonet_14df0385ad49\Boleto.Net\Boleto.Net.Arquivo\obj\Debug\BoletoNet.Arquivo.pdb

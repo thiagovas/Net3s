@@ -1,0 +1,133 @@
+﻿.tituloCad
+{
+    background-image: -moz-linear-gradient(top, #6C325B, #482344);
+    background-image : -webkit-gradient(linear, left top, left bottom, from(#6C325B), to(#482344));
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    cursor:pointer;
+    font-family: Verdana, sans-serif;
+}
+.cadastro
+{
+    display: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background: #CDC9C9;
+    padding-bottom: 20px;
+    border: 2px solid #5C294A;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.conteudo
+{
+    margin-top: 10px;
+}
+
+
+/* Antigo css */
+h3
+{
+    font-family: 'Rokkitt' , serif;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}
+.lblCurso
+{
+    font-family: 'Rokkitt' , serif;
+    font-weight: bold;
+    width: 120px;
+    font-size: 16px;
+    display: block;
+    float: left;
+    text-align: right;
+    margin-right: 8px;
+    padding-top: 10px;
+}
+.curso
+{
+    height: 50px;
+    margin-top: 10px;
+    border-bottom: 2px solid #3f3f3f;
+}
+.curso .nomes
+{
+    color: #5C294A;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.curso .datas
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+.curso .btnEditarCurso
+{
+    display: block;
+    float: right;
+    margin-right: 5px;
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    text-decoration:none;
+    background-color: #590044;
+    border: #6A0D37 solid 1px;
+    padding: 4px 8px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+.curso .btnEditarCurso:hover
+{
+    /* background-color: #6e5ba4; */
+    -webkit-animation-name: purplePulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;  
+    background-color: #7B68EE; 
+    -webkit-box-shadow:: 0 0 18px #7B68EE; 
+    -moz-box-shadow: 0 0 18px #7B68EE;
+    box-shadow: 0 0 18px #7B68EE;
+    border: #9370DB solid 1px;
+}
+.curso .btnExcluirCurso
+{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    text-decoration:none;
+    background-color: #590044;
+    border: #6A0D37 solid 1px;
+    padding: 4px 8px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+.curso .btnExcluirCurso:hover
+{
+    /* background-color: #6e5ba4; */
+    -webkit-animation-name: purplePulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;  
+    background-color: #7B68EE; 
+    -webkit-box-shadow:: 0 0 18px #7B68EE; 
+    -moz-box-shadow: 0 0 18px #7B68EE;
+    box-shadow: 0 0 18px #7B68EE;
+    border: #9370DB solid 1px;
+}
+
+
+
+

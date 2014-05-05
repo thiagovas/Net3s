@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Geral.master.cs" Inherits="UI.User.Geral" %>
+
+<%@ Register TagPrefix="n3s" TagName="network" Src="~/Componentes/displayNetwork.ascx" %>
+<%@ Register TagPrefix="n3s" TagName="menu" Src="~/Componentes/Menu.ascx" %>
+<%@ Register TagPrefix="n3s" TagName="notificacoes" Src="~/Componentes/Notificacoes.ascx" %>
+<%@ Register TagPrefix="n3s" TagName="propaganda" Src="~/Componentes/Propagandas.ascx" %>
+<%@ Register TagPrefix="n3s" TagName="acoes" Src="~/Componentes/Acoes.ascx" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles/CompNoti.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Styles/MasterPage.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Salsa' rel='stylesheet' type='text/css' />
+    <link href="../Styles/jquery.ui.tabs.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Styles/lightBox.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="../Scripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Plugins.js"></script>
+    <script type="text/javascript" src="../Scripts/Denunciar.js"></script>
+    <script type="text/javascript">
+        function efetuarBusca(event) {
+            var busca = $('.searchbox').val();
+            window.location = "../User/Pesquisa.aspx?paran=" + busca;
+        }
+
+        jQuery.fn.sbTooltip = function () {
+            return this.each(function () {
+                jQuery(this).attr({ 'data-sbtooltip': jQuery(this).attr("title") }).removeAttr("title");
+            });
+        };
+
+        $(document).ready(function () {
+            $(".teste").sbTooltip();
+
+            $('#notificacao').click(function () {
+                $('#conteudoNotificacao').slideToggle('slow');
+            });
+  
+            $('.searchbox').keypress(function (e) {
+                var code = (e.keyCode ? e.keyCode : e.which);
+                if (code == 13) {
+                    $('.searchbox_submit').trigger("click");
+                }
+            });
+
+            $('#orcamentoMenuPrincipal').modal({ url: 'SocilicarOrcamento.aspx', closeClickOut: false });
+
+//            $.ajax({
+//                type: "POST",
+//                url: "Geral.Master/ContarNotificacoes",
+//                contentType: "application/json; charset=utf-8",
+//                success: function (msg) {
+//                    var retorno = msg.d;
+//                    if (retorno > 0)
+//                        $('#notificacao').text("Notificações(" + retorno + ")");
+//                }
+//            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menuTop">
+            <a href="../User/Perfil.aspx"><img src="../Styles/img/logo.png" id="logo" alt="Net3 Services" /></a>
+            <!-- Barra de busca -->
+            <div id="searchwrapper">
+                <form id="formPesquisa" action="" method="post">
+                <input type="text" class="searchbox" placeholder="Busque por serviços/usuários" grammar="builtin:search" x-webkit-speech="" lang="pt-br" speech="" onwebkitspeechchange="efetuarBusca()"/>
+                <button class="searchbox_submit" onclick="location.href = 'Pesquisa.aspx?paran=' + $('.searchbox').val(); return false;"></button>
+                </form>
+            </div>
+            <!-- Menu na barra principal -->
+            <div id="opcoes">
+                <a href="#" id="notificacao" class="link">Notificações</a>
+                <asp:HyperLink ID="hlPerfil" runat="server" CssClass="link">Perfil</asp:HyperLink>
+                <a id="hlConfiguracoes" class="link" href="ConfigGeral.aspx">Configurações</a>
+                <a href="../Logout.aspx" id="hlSair" class="link">Sair</a>
+            </div>
+        </div>
+        <div id="conteudoNotificacao">
+            <n3s:notificacoes ID="notificacoesN3S" runat="server" />
+        </div>
+        <br />
+        <!-- Menu latera; -->
+        <div id="ladoEsquerdo">
+            <a href="../User/Perfil.aspx?id=<%= this.idUrl %>"><img src="../Componentes/BuscaImagens.ashx?id=<%= this.nomeFoto %>" alt="" id="imgPerfil" /></a>
+            <br />
+            <n3s:menu runat="server" ID="menuPrincipal" />
+            <br />
+            <div style="text-align: center"><n3s:network runat="server" ID="networkComp" /></div>
+            <br />
+            <font class="subTitulo">
+                <asp:Label ID="lblAcoes" runat="server" Text="AÇÕES" Visible="false"></asp:Label></font>
+            <br />
+            <n3s:acoes runat="server" ID="acoes" Visible="false" />
+        </div>
+        <div id="conteudo">
+            <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </form>
+        </div>
+        <div id="footer">
+            <div id="mongo">
+                <b>Powered By</b>
+                <br />
+                <a href="http://www.mongodb.org/" target="new">
+                    <img src="../Styles/img/mongo.png" alt="Powered By MongoDB" /></a>
+            </div>
+            <center>
+                <p>
+                    Copyright (c) 2011 - NET3 Services. Todos os direitos reservados.</p>
+                <p>
+                    <a href="#">Sobre</a> | <a href="#">Ajuda</a> | <a href="#">Anúncio</a></p>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

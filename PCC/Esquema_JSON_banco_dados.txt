@@ -1,0 +1,151 @@
+usuarios{
+_id: '',
+nome: '',
+cpf_cnpj: '',
+rg: '',
+telefone1: '',
+telefone2: '',
+celular1: '',
+celular2: '',
+email: '',
+site: '',
+tipoUsuario: '',
+imagem: '',
+login: '',
+senha: '',
+status: '',
+dataCadastro: '',
+enderecos: [
+		{
+		  _id: '',
+		  pais: '',
+		  uf: '',
+		  cidade: '',
+		  bairro: '',
+		  logradouro: '',
+		  cep: '',
+		  numeroEndereco: ''
+		}
+	   ],
+servicos: [
+	   {
+	     _id: '',
+	     nome: '',
+	     preco: '',
+	     categoriaServico: '',
+	     regional: '',
+	     notaMedia: '',
+	     descricao: '',
+	     tempoMedioGasto: '',
+	     nivelRegionalidade: '',
+	     unidadeMedida: '',
+		orcamento: [
+			     {
+				_id: '',
+				dataInicio: '',
+				dataFinal: '',
+				prestador: '',
+				contratante: '',
+				aprovado: ''
+			     }
+			   ]
+	   }
+	 ],
+historicoServicos: [
+		    {
+			_id: '',
+	     		nome: '',
+	     		preco: '',
+	     		categoriaServico: '',
+	     		regional: '',
+	     		notaMedia: '',
+	     		descricao: '',
+			tempoMedioGasto: '',
+	     		tempoGasto: '',
+			tipoServico: '',
+			nivelRegionalidade: '',
+			unidadeMedida: '',
+			   orcamento: [
+			     		{
+					   _id: '',
+					   dataInicio: '',
+					   dataFinal: '',
+					   prestador: '',
+					   contratante: ''
+			     		}
+			   	      ]
+		    }
+		  ],
+ocorrencias: [
+		{
+		   _id: '',
+		   descricao: '',
+	           statusOcorrencia: '',
+		   atendente: '',
+		   denunciante: '',
+		   resposta: '',
+	           dataDenuncia: '',
+		   dataResposta: ''
+		}
+	    ]
+}
+
+administradores: {
+	_id: '',
+	nome: '',
+	pais: '',
+	uf: '',
+	cidade: '',
+	login: '',
+	senha: '',
+	dataCadastro: '',
+}
+
+denuncias: {
+	_id: '',
+	descricao: '',
+	dataDenuncia: '',
+	denunciante: '',
+	acusado: '',
+	administrador: '',
+	statusDenuncia: '',
+	resposta: '',
+}
+
+
+
+Observações:
+* O tipo do usuário será preenchido por numeros onde 0 se refere ao usuário contratante, 1 se refere ao usuário prestador e 2 se refere ao usuário misto(contratante e prestador);
+
+* O status do usuário guarda se o usuário esta ativo ou inativo no sistema, o usuário podera ser inativado por causa de uma denuncia, porque ele excluiu o seu cadastro ou por qualquer outro motivo que poderemos encontrar ao longo do desenvolvimento do sistema;
+
+* Teremos um banco de dados separado para guardar todos os endereços existentes, com todos os paises, todos os estados/provinvias destes paises, todas as cidades dos respectivos estados/provincias e assim em diante. Este banco de dados serve para nao deixar o usuário informar endereços inválidos;
+
+* No array servicos, o campo categoriaServico guardara o objectId da categoria do serviço;
+
+* No array servicos, o campo regional é um campo booleano que guardará se o serviço que estará registrado no banco pode ser prestado a distância ou não;
+
+* No array servicos, o campo tempoMedioGasto guardará o tempo médio gasto para o prestador realizar o serviço armazenado no banco de dados;
+
+* No array orcamento, que está inserido no array servico, o campo aprovado, que é um campo do tipo booleano, guardará se o orçamento foi aprovado ou nao, se ele foi aprovado o sistema registrará que o serviço começará no dia determinado pelo campo dataInicio e que o contratante já poderá efetuar o pagamento;
+
+* NÃO é necessário a presença do campo aprovado, no array orcamento, dentro do array historicoServicos, pois o array historicoServicos irá guardar apenas os serviços em que os seus respectivos orçamentos foram aprovados;
+
+* No array historicoServicos, que está inserido em usuarios, guardará o historico dos serviços prestados ou contratados pelo usuário;
+
+* No array historicoServicos , inserido em usuarios, o campo tipoServico guardará se o serviço foi prestado ou contratado pelo usuário;
+
+* No array ocorrencias, contido em usuarios, NÃO é necessário o campo acusado, pois o acusado será o usuário que tiver a ocorrencia;
+
+* No array ocorrencias, o campo dataDenuncia guarda a data em que o denunciante realizou a denuncia;
+
+* No array ocorrencias, o campo dataResposta guarda a data em que o administrador verificou a denuncia feita;
+
+* Não será necessário o vetor contratos, pois o vetor historicoServicos já está desempenhando a mesma função;
+
+* O campo nivelRegionalidade, presente nos arrays servicos e historicoServicos, guarda a regiao que poderá ser encontrados contratantes para o serviço.
+
+
+
+Idéias para posteriores implementações:
+* Seria interessante pro contratante, parcelar o pagamento do serviço.

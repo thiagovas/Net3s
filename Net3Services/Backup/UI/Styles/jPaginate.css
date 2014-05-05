@@ -1,0 +1,252 @@
+﻿/* CSS Plugin */
+.jPaginate
+{
+    height: 34px;
+    position: relative;
+    color: #a5a5a5;
+    font-size: small;
+    width: 100%;
+}
+.jPaginate a
+{
+    line-height: 15px;
+    height: 18px;
+    cursor: pointer;
+    padding: 2px 5px;
+    margin: 2px;
+    float: left;
+}
+.jPag-control-back
+{
+    position: absolute;
+    left: 0px;
+}
+.jPag-control-front
+{
+    position: absolute;
+    top: 0px;
+}
+.jPaginate span
+{
+    cursor: pointer;
+}
+ul.jPag-pages
+{
+    float: left;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+ul.jPag-pages li
+{
+    display: inline;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+ul.jPag-pages li a
+{
+    float: left;
+    padding: 2px 5px;
+}
+span.jPag-current
+{
+    cursor: default;
+    font-weight: normal;
+    line-height: 15px;
+    height: 18px;
+    padding: 2px 5px;
+    margin: 2px;
+    float: left;
+}
+ul.jPag-pages li span.jPag-previous, ul.jPag-pages li span.jPag-next, span.jPag-sprevious, span.jPag-snext, ul.jPag-pages li span.jPag-previous-img, ul.jPag-pages li span.jPag-next-img, span.jPag-sprevious-img, span.jPag-snext-img
+{
+    height: 22px;
+    margin: 2px;
+    float: left;
+    line-height: 18px;
+}
+
+ul.jPag-pages li span.jPag-previous, ul.jPag-pages li span.jPag-previous-img
+{
+    margin: 2px 0px 2px 2px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 10px;
+}
+ul.jPag-pages li span.jPag-next, ul.jPag-pages li span.jPag-next-img
+{
+    margin: 2px 2px 2px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 10px;
+}
+span.jPag-sprevious, span.jPag-sprevious-img
+{
+    margin: 2px 0px 2px 2px;
+    font-size: 18px;
+    width: 15px;
+    text-align: right;
+}
+span.jPag-snext, span.jPag-snext-img
+{
+    margin: 2px 2px 2px 0px;
+    font-size: 18px;
+    width: 15px;
+    text-align: right;
+}
+ul.jPag-pages li span.jPag-previous-img
+{
+    background: transparent url(../images/previous.png) no-repeat center right;
+}
+ul.jPag-pages li span.jPag-next-img
+{
+    background: transparent url(../images/next.png) no-repeat center left;
+}
+span.jPag-sprevious-img
+{
+    background: transparent url(../images/sprevious.png) no-repeat center right;
+}
+span.jPag-snext-img
+{
+    background: transparent url(../images/snext.png) no-repeat center left;
+}
+
+/* Páginas da pesquisa */
+#pesquisa
+{
+    height: auto;
+    padding-top: 20px; 
+}
+#pesquisa .servico
+{
+    /* Borda Aredondada */
+    border-radius: 10px;
+    /* Background degrade */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#DCE6CF));
+    background: -moz-linear-gradient(top, #ffffff, #DCE6CF); /* Resolve o problema do degradê no IE9 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffffff', EndColorStr='#DCE6CF');
+    /* Sombreamento */
+    -moz-box-shadow: 0 0 12px #E8E8E8;
+    -webkit-box-shadow: 0 0 12px #E8E8E8;
+    box-shadow: 0 0 12px #E8E8E8;
+    /* Resto do CSS */
+    height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#pesquisa h4
+{
+    color: #fff;
+    font-family: 'Rokkitt' , serif;
+}
+
+#pesquisa .imgServ {
+    display: block;
+    float: left;
+    /* O height e width com max e um hack para esta merda funcionar no ie */   
+    max-height: 80px;
+    max-width: 80px;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    border: 5px solid #3f3f3f;
+	padding: 5px;
+	background: #fff; 
+}
+#pesquisa .nomeServ
+{
+    font-family: 'Rokkitt' , serif;
+    font-size: 22px;
+    display: block;
+    float: left;
+    color: #5C294A;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+#pesquisa .descricao
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 110px;
+    float: left;
+    font-size: 16px;
+    width: 30%;
+    max-width: 30%;
+    height: 55px;
+}
+#pesquisa .divBotao
+{
+    display: block;
+    float: right;
+    border-left: 3px solid #3f3f3f;
+    width: 20%;
+    height: 100px;
+}
+#pesquisa .divBotao label
+{
+    color: #5C294A;
+    font-family: 'Rokkitt' , serif;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+#pesquisa .divBotao label span
+{
+    font-size: 18px;
+    margin-right: 5px;
+}
+#pesquisa .divBotao a
+{
+    border-radius: 8px;
+    text-decoration:none;
+    text-align: center;
+    background-color: #590044;
+    border: #6A0D37 solid 1px;
+    padding: 4px 8px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#pesquisa .divBotao a:hover
+{
+    /* background-color: #6e5ba4; */
+    -webkit-animation-name: purplePulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;  
+    background-color: #7B68EE; 
+    -webkit-box-shadow:: 0 0 18px #7B68EE; 
+    -moz-box-shadow: 0 0 18px #7B68EE;
+    box-shadow: 0 0 18px #7B68EE;
+    border: #9370DB solid 1px;
+}
+/* Animação do botão que faz com que o botão brilhe */
+@-webkit-keyframes purplePulse {
+    from  
+    {
+        background-color: #590044; 
+        box-shadow: 0 0 9px #6A0D37;
+        -webkit-box-shadow: 0 0 9px #6A0D37;
+        -moz-box-shadow: 0 0 9px #6A0D37; 
+    }
+    to  
+    {
+        background-color: #7B68EE; 
+        border: #9370DB solid 1px; 
+        -webkit-box-shadow: 0 0 18px #7B68EE; 
+        -moz-box-shadow: 0 0 18px #7B68EE; 
+        box-shadow: 0 0 18px #7B68EE;
+    }
+}
+
+
+

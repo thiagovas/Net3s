@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C658C22E-575E-4AFA-AA98-D4F77F81894E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ChavesUi.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB">
+      <HintPath>..\DLLs\0.90\MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=1.0.3744.30075, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.GridFS, Version=0.90.0.1, Culture=neutral, PublicKeyToken=f61bd00ba2535278, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\0.90\MongoDB.GridFS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComingSoon.aspx.cs">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComingSoon.aspx.designer.cs">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Acoes.ascx.cs">
+      <DependentUpon>Acoes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\Acoes.ascx.designer.cs">
+      <DependentUpon>Acoes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Atualizacoes.ascx.cs">
+      <DependentUpon>Atualizacoes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\Atualizacoes.ascx.designer.cs">
+      <DependentUpon>Atualizacoes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\BuscaImagens.ashx.cs">
+      <DependentUpon>BuscaImagens.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\displayNetwork.ascx.cs">
+      <DependentUpon>displayNetwork.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\displayNetwork.ascx.designer.cs">
+      <DependentUpon>displayNetwork.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\InformacoesPesquisa.ascx.cs">
+      <DependentUpon>InformacoesPesquisa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\InformacoesPesquisa.ascx.designer.cs">
+      <DependentUpon>InformacoesPesquisa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ListServOferecidos.ascx.cs">
+      <DependentUpon>ListServOferecidos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\ListServOferecidos.ascx.designer.cs">
+      <DependentUpon>ListServOferecidos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Notificacoes.ascx.cs">
+      <DependentUpon>Notificacoes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\Notificacoes.ascx.designer.cs">
+      <DependentUpon>Notificacoes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Propagandas.ascx.cs">
+      <DependentUpon>Propagandas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\Propagandas.ascx.designer.cs">
+      <DependentUpon>Propagandas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ServicosAberto.ascx.cs">
+      <DependentUpon>ServicosAberto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\ServicosAberto.ascx.designer.cs">
+      <DependentUpon>ServicosAberto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\VisualizarNetwork.ascx.cs">
+      <DependentUpon>VisualizarNetwork.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\VisualizarNetwork.ascx.designer.cs">
+      <DependentUpon>VisualizarNetwork.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\VisualizarOrcamento.ascx.cs">
+      <DependentUpon>VisualizarOrcamento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\VisualizarOrcamento.ascx.designer.cs">
+      <DependentUpon>VisualizarOrcamento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmarCadastro.aspx.cs">
+      <DependentUpon>ConfirmarCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmarCadastro.aspx.designer.cs">
+      <DependentUpon>ConfirmarCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldDefault.aspx.cs">
+      <DependentUpon>OldDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldDefault.aspx.designer.cs">
+      <DependentUpon>OldDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecuperarSenha.aspx.cs">
+      <DependentUpon>RecuperarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperarSenha.aspx.designer.cs">
+      <DependentUpon>RecuperarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReescreverSenha.aspx.cs">
+      <DependentUpon>ReescreverSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReescreverSenha.aspx.designer.cs">
+      <DependentUpon>ReescreverSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermosUso.aspx.cs">
+      <DependentUpon>TermosUso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermosUso.aspx.designer.cs">
+      <DependentUpon>TermosUso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Twitter.aspx.cs">
+      <DependentUpon>Twitter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Twitter.aspx.designer.cs">
+      <DependentUpon>Twitter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AlterarSenha.aspx.cs">
+      <DependentUpon>AlterarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AlterarSenha.aspx.designer.cs">
+      <DependentUpon>AlterarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AprovarOrcamento.aspx.cs">
+      <DependentUpon>AprovarOrcamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AprovarOrcamento.aspx.designer.cs">
+      <DependentUpon>AprovarOrcamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Atualizacoes.aspx.cs">
+      <DependentUpon>Atualizacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Atualizacoes.aspx.designer.cs">
+      <DependentUpon>Atualizacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Avaliacao.aspx.cs">
+      <DependentUpon>Avaliacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Avaliacao.aspx.designer.cs">
+      <DependentUpon>Avaliacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\CadServicos.aspx.cs">
+      <DependentUpon>CadServicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\CadServicos.aspx.designer.cs">
+      <DependentUpon>CadServicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ConfContato.aspx.cs">
+      <DependentUpon>ConfContato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ConfContato.aspx.designer.cs">
+      <DependentUpon>ConfContato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ConfigEndereco.aspx.cs">
+      <DependentUpon>ConfigEndereco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ConfigEndereco.aspx.designer.cs">
+      <DependentUpon>ConfigEndereco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ConfigFoto.aspx.cs">
+      <DependentUpon>ConfigFoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ConfigFoto.aspx.designer.cs">
+      <DependentUpon>ConfigFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ConfigGeral.aspx.cs">
+      <DependentUpon>ConfigGeral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ConfigGeral.aspx.designer.cs">
+      <DependentUpon>ConfigGeral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ConfigInfoPessoais.aspx.cs">
+      <DependentUpon>ConfigInfoPessoais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ConfigInfoPessoais.aspx.designer.cs">
+      <DependentUpon>ConfigInfoPessoais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Configuracoes.Master.cs">
+      <DependentUpon>Configuracoes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Configuracoes.Master.designer.cs">
+      <DependentUpon>Configuracoes.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\ConfirmaFinalizar.aspx.cs">
+      <DependentUpon>ConfirmaFinalizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ConfirmaFinalizar.aspx.designer.cs">
+      <DependentUpon>ConfirmaFinalizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Contato.aspx.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Contato.aspx.designer.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Contratar.aspx.cs">
+      <DependentUpon>Contratar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Contratar.aspx.designer.cs">
+      <DependentUpon>Contratar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\CriarOrcamento.aspx.cs">
+      <DependentUpon>CriarOrcamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\CriarOrcamento.aspx.designer.cs">
+      <DependentUpon>CriarOrcamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarCurriculum.aspx.cs">
+      <DependentUpon>EditarCurriculum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarCurriculum.aspx.designer.cs">
+      <DependentUpon>EditarCurriculum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Denunciar.aspx.cs">
+      <DependentUpon>Denunciar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Denunciar.aspx.designer.cs">
+      <DependentUpon>Denunciar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarCurso.aspx.cs">
+      <DependentUpon>EditarCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarCurso.aspx.designer.cs">
+      <DependentUpon>EditarCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarExperiencia.aspx.cs">
+      <DependentUpon>EditarExperiencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarExperiencia.aspx.designer.cs">
+      <DependentUpon>EditarExperiencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarIdioma.aspx.cs">
+      <DependentUpon>EditarIdioma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarIdioma.aspx.designer.cs">
+      <DependentUpon>EditarIdioma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarPremio.aspx.cs">
+      <DependentUpon>EditarPremio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarPremio.aspx.designer.cs">
+      <DependentUpon>EditarPremio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarServico.aspx.cs">
+      <DependentUpon>EditarServico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarServico.aspx.designer.cs">
+      <DependentUpon>EditarServico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Geral.Master.cs">
+      <DependentUpon>Geral.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Geral.Master.designer.cs">
+      <DependentUpon>Geral.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\ListarMensagens.aspx.cs">
+      <DependentUpon>ListarMensagens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ListarMensagens.aspx.designer.cs">
+      <DependentUpon>ListarMensagens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\MeusOrcamentos.aspx.cs">
+      <DependentUpon>MeusOrcamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MeusOrcamentos.aspx.designer.cs">
+      <DependentUpon>MeusOrcamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Network.aspx.cs">
+      <DependentUpon>Network.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Network.aspx.designer.cs">
+      <DependentUpon>Network.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Pesquisa.aspx.cs">
+      <DependentUpon>Pesquisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Pesquisa.aspx.designer.cs">
+      <DependentUpon>Pesquisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ProcurarServicos.aspx.cs">
+      <DependentUpon>ProcurarServicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ProcurarServicos.aspx.designer.cs">
+      <DependentUpon>ProcurarServicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ResponderOrcamento.aspx.cs">
+      <DependentUpon>ResponderOrcamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ResponderOrcamento.aspx.designer.cs">
+      <DependentUpon>ResponderOrcamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ServicosAbertos.aspx.cs">
+      <DependentUpon>ServicosAbertos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ServicosAbertos.aspx.designer.cs">
+      <DependentUpon>ServicosAbertos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ServicosOferecidos.aspx.cs">
+      <DependentUpon>ServicosOferecidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ServicosOferecidos.aspx.designer.cs">
+      <DependentUpon>ServicosOferecidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\SocilicarOrcamento.aspx.cs">
+      <DependentUpon>SocilicarOrcamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\SocilicarOrcamento.aspx.designer.cs">
+      <DependentUpon>SocilicarOrcamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UploadFoto.aspx.cs">
+      <DependentUpon>UploadFoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UploadFoto.aspx.designer.cs">
+      <DependentUpon>UploadFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VisualizarCurriculum.aspx.cs">
+      <DependentUpon>VisualizarCurriculum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VisualizarCurriculum.aspx.designer.cs">
+      <DependentUpon>VisualizarCurriculum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VisualizarMensagem.aspx.cs">
+      <DependentUpon>VisualizarMensagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VisualizarMensagem.aspx.designer.cs">
+      <DependentUpon>VisualizarMensagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VisualizarOrcamento.aspx.cs">
+      <DependentUpon>VisualizarOrcamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VisualizarOrcamento.aspx.designer.cs">
+      <DependentUpon>VisualizarOrcamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\VisualizarServico.aspx.cs">
+      <DependentUpon>VisualizarServico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\VisualizarServico.aspx.designer.cs">
+      <DependentUpon>VisualizarServico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarCertificado.aspx.cs">
+      <DependentUpon>EditarCertificado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarCertificado.aspx.designer.cs">
+      <DependentUpon>EditarCertificado.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chrisimos\Chrisimos.csproj">
+      <Project>{81771D27-6B3C-4114-85BB-2F92576A6BC5}</Project>
+      <Name>Chrisimos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClsLibBLL\ClsLibBLL.csproj">
+      <Project>{B3992D1C-E7AC-4E58-94B2-83632633525C}</Project>
+      <Name>ClsLibBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClsLibDAL\ClsLibDAL.csproj">
+      <Project>{C98CA3D0-A1D5-4827-B094-0FE99BE05009}</Project>
+      <Name>ClsLibDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{23237FAA-E620-4903-A586-1B02EF1A0002}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ComingSoon.aspx" />
+    <Content Include="Componentes\Acoes.ascx" />
+    <Content Include="Componentes\Atualizacoes.ascx" />
+    <Content Include="Componentes\displayNetwork.ascx" />
+    <Content Include="Componentes\InformacoesPesquisa.ascx" />
+    <Content Include="Componentes\ListServOferecidos.ascx" />
+    <Content Include="Componentes\Menu.ascx" />
+    <Content Include="Componentes\Notificacoes.ascx" />
+    <Content Include="Componentes\Propagandas.ascx" />
+    <Content Include="Componentes\ServicosAberto.ascx" />
+    <Content Include="Componentes\VisualizarNetwork.ascx" />
+    <Content Include="Componentes\VisualizarOrcamento.ascx" />
+    <Content Include="ConfirmarCadastro.aspx" />
+    <Content Include="OldDefault.aspx" />
+    <Content Include="DLL\AjaxControlToolkit.dll" />
+    <Content Include="DLL\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLL\MongoDB.Driver.dll" />
+    <Content Include="DLL\MongoDB.GridFS.dll" />
+    <Content Include="DLL\MongoDB.GridFS.xml" />
+    <Content Include="DLL\MongoDB.Linq.dll" />
+    <Content Include="Erros\401.html" />
+    <Content Include="Erros\403.html" />
+    <Content Include="Erros\404.html" />
+    <Content Include="Erros\500.html" />
+    <Content Include="Erros\503.html" />
+    <Content Include="Erros\Padrao.html" />
+    <Content Include="RecuperarSenha.aspx" />
+    <Content Include="ReescreverSenha.aspx" />
+    <Content Include="Scripts\jquery.colorbox-min.js" />
+    <Content Include="Scripts\Mensagens.js" />
+    <Content Include="Scripts\noty\jquery.noty.js" />
+    <Content Include="Scripts\noty\layouts\bottom.js" />
+    <Content Include="Scripts\noty\layouts\bottomCenter.js" />
+    <Content Include="Scripts\noty\layouts\bottomLeft.js" />
+    <Content Include="Scripts\noty\layouts\bottomRight.js" />
+    <Content Include="Scripts\noty\layouts\center.js" />
+    <Content Include="Scripts\noty\layouts\centerLeft.js" />
+    <Content Include="Scripts\noty\layouts\centerRight.js" />
+    <Content Include="Scripts\noty\layouts\inline.js" />
+    <Content Include="Scripts\noty\layouts\top.js" />
+    <Content Include="Scripts\noty\layouts\topCenter.js" />
+    <Content Include="Scripts\noty\layouts\topLeft.js" />
+    <Content Include="Scripts\noty\layouts\topRight.js" />
+    <Content Include="Scripts\noty\promise.js" />
+    <Content Include="Scripts\noty\themes\default.js" />
+    <Content Include="Styles\colorbox.css" />
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\Fonts\FortAwesome\fontawesome-webfont.svg" />
+    <Content Include="Styles\Fonts\modernpics\modernpics-webfont.svg" />
+    <Content Include="Styles\Fonts\RaphaelIcons\Fontby.txt" />
+    <Content Include="Styles\Fonts\RaphaelIcons\license.txt" />
+    <Content Include="Styles\Fonts\RaphaelIcons\raphaelicons-webfont.svg" />
+    <Content Include="Styles\Fonts\websymbols\websymbols-regular-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Help\categoriaServicoHelp.html" />
+    <Content Include="Help\dataNascimentoHelp.html" />
+    <Content Include="Help\descricaoOrcamentoHelp.html" />
+    <Content Include="Help\descricaoServicoHelp.html" />
+    <Content Include="Help\emailHelp.html" />
+    <Content Include="Help\loginHelp.html" />
+    <Content Include="Help\nivelRegServicoHelp.html" />
+    <Content Include="Help\nomeServicoHelp.html" />
+    <Content Include="Help\nomeUserHelp.html" />
+    <Content Include="Help\precoServicoHelp.html" />
+    <Content Include="Help\prioridadeOrcamentoHelp.html" />
+    <Content Include="Help\qtdContratadaOrcamentoHelp.html" />
+    <Content Include="Help\regionalServicoHelp.html" />
+    <Content Include="Help\senhaHelp.html" />
+    <Content Include="Help\servicoOrcamentoHelp.html" />
+    <Content Include="Help\sexoHelp.html" />
+    <Content Include="Help\uniMedServicoHelp.html" />
+    <Content Include="Imagens\campoBusca.png" />
+    <Content Include="Imagens\CategoriasServico\Advocacia.png" />
+    <Content Include="Imagens\CategoriasServico\ArteHobies.png" />
+    <Content Include="Imagens\CategoriasServico\AutomoveisVeiculos.png" />
+    <Content Include="Imagens\CategoriasServico\BelezaEstetica.png" />
+    <Content Include="Imagens\CategoriasServico\CasaDecoracao.png" />
+    <Content Include="Imagens\CategoriasServico\ConstrucaoCivil.png" />
+    <Content Include="Imagens\CategoriasServico\Consultoria.png" />
+    <Content Include="Imagens\CategoriasServico\CulturaArte.png" />
+    <Content Include="Imagens\CategoriasServico\Educacao.png" />
+    <Content Include="Imagens\CategoriasServico\Esportes.png" />
+    <Content Include="Imagens\CategoriasServico\FestasEventos.png" />
+    <Content Include="Imagens\CategoriasServico\Fotografia.png" />
+    <Content Include="Imagens\CategoriasServico\Gastronomia.png" />
+    <Content Include="Imagens\CategoriasServico\InformaticaTecnologia.png" />
+    <Content Include="Imagens\CategoriasServico\Jardinagem.png" />
+    <Content Include="Imagens\CategoriasServico\JogosEntretenimento.png" />
+    <Content Include="Imagens\CategoriasServico\ManutencaoDomestica.png" />
+    <Content Include="Imagens\CategoriasServico\MarketingComunicacao.png" />
+    <Content Include="Imagens\CategoriasServico\MedicinaAlternativa.png" />
+    <Content Include="Imagens\CategoriasServico\ModaRoupasAcessorios.png" />
+    <Content Include="Imagens\CategoriasServico\Musica.png" />
+    <Content Include="Imagens\CategoriasServico\Saude.png" />
+    <Content Include="Imagens\CategoriasServico\Seguranca.png" />
+    <Content Include="Imagens\CategoriasServico\ServicosGerais.png" />
+    <Content Include="Imagens\CategoriasServico\Transporte.png" />
+    <Content Include="Imagens\CategoriasServico\TurismoLazer.png" />
+    <Content Include="Imagens\CategoriasServico\Veterinaria.png" />
+    <Content Include="Imagens\favicon.ico" />
+    <Content Include="Imagens\icoBusca.png" />
+    <Content Include="Imagens\lapis.png" />
+    <Content Include="Imagens\load.gif" />
+    <Content Include="Imagens\logoMini_net3.png" />
+    <Content Include="Imagens\mongo.png" />
+    <Content Include="Imagens\servicos.png" />
+    <Content Include="Imagens\user.png" />
+    <Content Include="Imagens\usuarios.png" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Scripts\ConfigEndereco.js" />
+    <Content Include="Scripts\Denunciar.js" />
+    <Content Include="Scripts\editarServico.js" />
+    <Content Include="Scripts\editarUsuario.js" />
+    <Content Include="Scripts\img\load.gif" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.confirm.js" />
+    <Content Include="Scripts\jquery.datepick-pt-BR.js" />
+    <Content Include="Scripts\jquery.datepick.ext.min.js" />
+    <Content Include="Scripts\jquery.datepick.min.js" />
+    <Content Include="Scripts\modernizr-1.1.min.js" />
+    <Content Include="Scripts\Plugins-full.js" />
+    <Content Include="Scripts\Plugins.js" />
+    <Content Include="Styles\AdmCss.css" />
+    <Content Include="Styles\Atualizacoes.css" />
+    <Content Include="Styles\Avaliacao.css" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\Forms.css" />
+    <Content Include="Styles\img\arrow_left.gif" />
+    <Content Include="Styles\img\arrow_right.gif" />
+    <Content Include="Styles\img\bg.jpg" />
+    <Content Include="Styles\img\body_bg.jpg" />
+    <Content Include="Styles\img\border.png" />
+    <Content Include="Styles\img\buttons.png" />
+    <Content Include="Styles\CadUsu.css" />
+    <Content Include="Styles\cadUsuLocar.css" />
+    <Content Include="Styles\CompNoti.css" />
+    <Content Include="Styles\Configuracoes.css" />
+    <Content Include="Styles\Curriculum.css" />
+    <Content Include="Styles\Denuncia.css" />
+    <Content Include="Styles\Denunciar.css" />
+    <Content Include="Styles\DivLogin.css" />
+    <Content Include="Styles\EditarServicos.css" />
+    <Content Include="Styles\EditarUsuario.css" />
+    <Content Include="Styles\erros.css" />
+    <Content Include="Styles\estilo.css" />
+    <Content Include="Styles\EstiloAbas.css" />
+    <Content Include="Styles\ExcluirCurso.css" />
+    <Content Include="Styles\img\controls.png" />
+    <Content Include="Styles\img\GLOBO.png" />
+    <Content Include="Styles\img\header_bg.jpg" />
+    <Content Include="Styles\img\ie.png" />
+    <Content Include="Styles\img\EmptyStar.png" />
+    <Content Include="Styles\img\FilledStar.png" />
+    <Content Include="Styles\img\fundo.jpg" />
+    <Content Include="Styles\img\ie6\borderBottomCenter.png" />
+    <Content Include="Styles\img\ie6\borderBottomLeft.png" />
+    <Content Include="Styles\img\ie6\borderBottomRight.png" />
+    <Content Include="Styles\img\ie6\borderMiddleLeft.png" />
+    <Content Include="Styles\img\ie6\borderMiddleRight.png" />
+    <Content Include="Styles\img\ie6\borderTopCenter.png" />
+    <Content Include="Styles\img\ie6\borderTopLeft.png" />
+    <Content Include="Styles\img\ie6\borderTopRight.png" />
+    <Content Include="Styles\img\linha.png" />
+    <Content Include="Styles\img\loading.gif" />
+    <Content Include="Styles\img\loading_background.png" />
+    <Content Include="Styles\img\logo.png" />
+    <Content Include="Styles\img\logoMongoDb.png" />
+    <Content Include="Styles\img\overlay.png" />
+    <Content Include="Styles\img\progressImg1.png" />
+    <Content Include="Styles\img\SavedStar.png" />
+    <Content Include="Styles\img\topo.jpg" />
+    <Content Include="Styles\Mensagens.css" />
+    <Content Include="Styles\Visualizar.css" />
+    <Content Include="Styles\JanelaModal.css" />
+    <Content Include="Styles\jPaginate.css" />
+    <Content Include="Styles\jquery.confirm.css" />
+    <Content Include="Styles\jquery.datepick.css" />
+    <Content Include="Styles\jquery.ui.tabs.css" />
+    <Content Include="Styles\ListServicos.css" />
+    <Content Include="Styles\ListUsu.css" />
+    <Content Include="Styles\MasterAdm.css" />
+    <Content Include="Styles\MasterPage.css" />
+    <Content Include="Styles\Network.css" />
+    <Content Include="Styles\normalize.css" />
+    <Content Include="Styles\Perfil.css" />
+    <Content Include="Styles\Pesquisa.css" />
+    <Content Include="Styles\Plugins\jquery.ketchup.css" />
+    <Content Include="Styles\LightBox.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\TabControl.css" />
+    <Content Include="Styles\termosDeUso.css" />
+    <Content Include="Styles\Twitter.css" />
+    <Content Include="Styles\VisualizarNetwork.css" />
+    <Content Include="TermosUso.aspx" />
+    <Content Include="Twitter.aspx" />
+    <Content Include="User\AlterarSenha.aspx" />
+    <Content Include="User\AprovarOrcamento.aspx" />
+    <Content Include="User\Atualizacoes.aspx" />
+    <Content Include="User\Avaliacao.aspx" />
+    <Content Include="User\CadServicos.aspx" />
+    <Content Include="User\ConfContato.aspx" />
+    <Content Include="User\ConfigEndereco.aspx" />
+    <Content Include="User\ConfigFoto.aspx" />
+    <Content Include="User\ConfigGeral.aspx" />
+    <Content Include="User\ConfigInfoPessoais.aspx" />
+    <Content Include="User\ConfirmaFinalizar.aspx" />
+    <Content Include="User\Contato.aspx" />
+    <Content Include="User\Contratar.aspx" />
+    <Content Include="User\CriarOrcamento.aspx" />
+    <Content Include="User\EditarCurriculum.aspx" />
+    <Content Include="User\Denunciar.aspx" />
+    <Content Include="User\EditarCurso.aspx" />
+    <Content Include="User\EditarExperiencia.aspx" />
+    <Content Include="User\EditarIdioma.aspx" />
+    <Content Include="User\EditarPremio.aspx" />
+    <Content Include="User\EditarServico.aspx" />
+    <Content Include="User\ListarMensagens.aspx" />
+    <Content Include="User\MeusOrcamentos.aspx" />
+    <Content Include="User\Network.aspx" />
+    <Content Include="User\Perfil.aspx" />
+    <Content Include="User\Pesquisa.aspx" />
+    <Content Include="User\ProcurarServicos.aspx" />
+    <Content Include="User\ResponderOrcamento.aspx" />
+    <Content Include="User\ServicosAbertos.aspx" />
+    <Content Include="User\ServicosOferecidos.aspx" />
+    <Content Include="User\SocilicarOrcamento.aspx" />
+    <Content Include="User\UploadFoto.aspx" />
+    <Content Include="User\VisualizarCurriculum.aspx" />
+    <Content Include="User\VisualizarMensagem.aspx" />
+    <Content Include="User\VisualizarOrcamento.aspx" />
+    <Content Include="User\VisualizarServico.aspx" />
+    <Content Include="User\EditarCertificado.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User\Configuracoes.Master" />
+    <Content Include="User\Geral.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Componentes\BuscaImagens.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChavesUi.snk" />
+    <None Include="Styles\Fonts\FortAwesome\FontAwesome-Vectors.pdf" />
+    <None Include="Styles\Fonts\FortAwesome\fontawesome-webfont.eot" />
+    <None Include="Styles\Fonts\FortAwesome\fontawesome-webfont.ttf" />
+    <None Include="Styles\Fonts\FortAwesome\fontawesome-webfont.woff" />
+    <None Include="Styles\Fonts\modernpics\modernpics-webfont.eot" />
+    <None Include="Styles\Fonts\modernpics\modernpics-webfont.ttf" />
+    <None Include="Styles\Fonts\modernpics\modernpics-webfont.woff" />
+    <None Include="Styles\Fonts\RaphaelIcons\raphaelicons-webfont.eot" />
+    <None Include="Styles\Fonts\RaphaelIcons\raphaelicons-webfont.ttf" />
+    <None Include="Styles\Fonts\RaphaelIcons\raphaelicons-webfont.woff" />
+    <None Include="Styles\Fonts\websymbols\websymbols-regular-webfont.eot" />
+    <None Include="Styles\Fonts\websymbols\websymbols-regular-webfont.ttf" />
+    <None Include="Styles\Fonts\websymbols\websymbols-regular-webfont.woff" />
+    <Content Include="User\Master.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagens\Propaganda\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28382</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Net3s</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

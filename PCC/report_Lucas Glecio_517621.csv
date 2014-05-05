@@ -1,0 +1,36 @@
+Time|User|Message
+"31/10/2011 22.33.18"|"Lucas Glecio"|"erika, eu queria a promoção de um ano gratis porem deram um boleto para pagar, como fasso?"|
+"31/10/2011 22.33.19"|"Erika"|""|
+"31/10/2011 22.39.32"|"Lucas Glecio"|"boa noite bruno, bom eu queria saber sobre a promoçao de um ano grátis, eu li que era grátis mas ao fazer o cadastro me deram um boleto para pagar e so ia ativar o processo depois de pago, como funciona isso?"|
+"31/10/2011 22.40.09"|"Bruno André Santos Barbosa"|"Qual o seu domínio cadastrado?"|
+"31/10/2011 22.40.34"|"Lucas Glecio"|"net3s.com.br"|
+"31/10/2011 22.41.18"|"Bruno André Santos Barbosa"|"Certo senhor, sendo que o senhor registrou o seu dominio diretamente no registro.br?"|
+"31/10/2011 22.43.10"|"Lucas Glecio"|"é um trabalho de escola, projeto de conclusão de curso, ensino tecnico, nosso sistema eh via web, intao precisamos do site no ar, o outro integrante do grupo me informou que ele tinha esse dominio pronto, que precisava do host, intao criei aqui na uol, possivelmente foi direto do registro.br sim"|
+"31/10/2011 22.43.49"|"Bruno André Santos Barbosa"|"Somente o senhor efetuar os apontamentos do dns para nossos servidores"|
+"31/10/2011 22.44.07"|"Bruno André Santos Barbosa"|"Os servidores de DNS padrão do UOL HOST são:
+
+MASTER: ns1.dominios.uol.com.br
+SLAVE1: ns2.dominios.uol.com.br
+SLAVE2: ns3.dominios.uol.com.br"|
+"31/10/2011 22.44.47"|"Lucas Glecio"|"e com relação ao ano grátis?"|
+"31/10/2011 22.46.48"|"Bruno André Santos Barbosa"|"Bem senhor, como o senhor já possuia um dominio no registro.br em que o senhor efetuou o pagamento com eles, não há necessidade de registrar o seu dominio"|
+"31/10/2011 22.50.09"|"Lucas Glecio"|"mas a gente precisa de um host como a uol para podermos colocar o site no ar, intao precisamos de um cadastro aqui, certo? ou não?"|
+"31/10/2011 22.53.33"|"Lucas Glecio"|"..."|
+"31/10/2011 22.55.29"|"Lucas Glecio"|"E para publicar? e para mandar o sistema para o servidor,para usar o FTP, precisamos de uma conta, certo?"|
+"31/10/2011 22.57.22"|"Bruno André Santos Barbosa"|"Você pode visuzalizar os dados de FTP e cadastrar a senha de FTP da seguinte forma:
+
+- Entre na página: http://www.uolhost.com.br/
+- Logue EM &quot;&quot;PAINEL DE CONTROLE&quot;&quot; com seus dados como @uol.com.br e SENHA
+- Em seguida você visualizará o &quot;&quot;RESUMO DA CONTA&quot;&quot;
+- Localize abaixo de Serviços Relacionados ao seu email o serviço : &quot;&quot;Plano de Hospedagem&quot;&quot;
+- Clique em &quot;&quot;PAINEL DE CONTROLE / CONSTRUTOR DE SITES&quot;&quot;
+- Ao lado esquerdo do logotipo do sistema operacional da Hospedagem, você verá 3 dados:
+- Endereço de FTP, login de publicação de FTP e alterar senha de FTP.
+- Deverá anotar os dados de Servidor e login e clicar em alterar senha de FTP, para cadastrá-la."|
+"31/10/2011 22.59.38"|"Lucas Glecio"|"tah ok"|
+"31/10/2011 23.00.00"|"Lucas Glecio"|"A
+i não precisaremos pagar a taxa durante 1 ano para usarmos o serviço certo?"|
+"31/10/2011 23.02.45"|"Bruno André Santos Barbosa"|"Como havia informado, como o seu dominio foi registrado diretamente no registro.br, somente proceder com o pagamento no registro.br o registro, já o serviço seria a sua escolha pelo periodo"|
+"31/10/2011 23.03.25"|"Lucas Glecio"|"Ok bruno, muito obrigado pelas informações"|
+"31/10/2011 23.03.30"|"Lucas Glecio"|"boa noite"|
+"31/10/2011 23.04.01"|"Bruno André Santos Barbosa"|"O Uol Host agradece o contato. Tenha uma ótima noite!!"|

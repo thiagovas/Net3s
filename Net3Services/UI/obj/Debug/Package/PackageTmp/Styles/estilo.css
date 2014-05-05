@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+
+body 
+{
+    margin-top:0px;
+    margin-left: 0px;
+    margin-right: 0px; 
+}
+#center
+{
+    background-image: url(img/bg.jpg);
+    background-repeat: repeat-x;
+    
+    width: 100%;
+    height: 633px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#login 
+{
+	height:70px;
+	width:1274px;
+	float:left;
+	padding:30px 0px 0px 0px;
+	color:#FFF;
+}
+#globo
+{
+    position: absolute;
+    top: 111px;
+    left: 18px;
+    width: 317px;
+    height: 300px;
+}
+#marca 
+{
+    width:670px;
+    height:70px;
+    float:left
+}
+#formLogin
+{
+    position: absolute;
+    top: 37px;
+    left: 858px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.camposTexto 
+{
+	width:164px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float:left;
+	font-style:italic;
+}
+.input 
+{
+    -webkit-transition: -webkit-box-shadow 1s ease-in;
+	-moz-transition: -moz-box-shadow 1s ease-in;
+	-o-transition: -o-box-shadow 1s ease-in;
+    width:140px;
+    padding-left: 5px;
+    font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size:11px;
+    border-radius: 4px; 
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */    
+}
+.input:hover
+{
+    -webkit-box-shadow:0 0 10px #6e5ba4; 
+	-moz-box-shadow: 0 0 10px #6e5ba4; 
+	-o-box-shadow: 0 0 10px #6e5ba4;
+	background-color: #FFFFFF;
+}
+.linkw
+{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button 
+{
+    background-color:#590044;
+	border:#6A0D37 solid 1px;
+	color:#FFF;
+	cursor: pointer;
+	font-size:11px;
+	font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-mox-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+.button:hover
+{
+    /* background-color: #6e5ba4; */
+    -webkit-animation-name: purplePulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;  
+    background-color: #7B68EE; 
+    -webkit-box-shadow:: 0 0 18px #7B68EE; 
+    -moz-box-shadow: 0 0 18px #7B68EE;
+    box-shadow: 0 0 18px #7B68EE;
+    border: #9370DB solid 1px;
+}
+/* Animação do botão qu faz com que  */
+@-webkit-keyframes purplePulse {
+    from  
+    {
+        background-color: #590044; 
+        box-shadow: 0 0 9px #6A0D37;
+        -webkit-box-shadow: 0 0 9px #6A0D37;
+        -moz-box-shadow: 0 0 9px #6A0D37; 
+    }
+    to  
+    {
+        background-color: #7B68EE; 
+        border: #9370DB solid 1px; 
+        -webkit-box-shadow: 0 0 18px #7B68EE; 
+        -moz-box-shadow: 0 0 18px #7B68EE; 
+        box-shadow: 0 0 18px #7B68EE;
+    }
+}
+#banner 
+{
+	width:1137px;
+    height: 165px;
+	float:left;
+	margin-top: 60px;
+}
+#cadastro 
+{
+	width:1100px;
+	height:148px;
+	float:left;
+}
+.linkCadastro 
+{
+	float:right;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:240px;
+	height:115px;
+	color:#FFF;
+	font-size:12px;
+	font-style:italic;
+	padding: 30px 0px 0px 50px;
+    margin-left: 4px;
+}
+.linkCadastro a 
+{
+    -webkit-transition: background 500ms ease-in 400ms;
+	-moz-transition: background 500ms ease-in 400ms;
+	-o-transition: background 500ms ease-in 400ms;
+	padding:3px 5px 3px 5px;
+	border-radius: 4px;
+	background-color:#590044;
+	color:#FFF;
+	text-decoration:none;
+	border:#6A0D37 solid 1px;
+	font-size:14px;
+	font-weight:bold;
+}
+.linkCadastro a:hover 
+{
+	/* background-color: #6e5ba4; */
+    -webkit-animation-name: purplePulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;  
+    background-color: #7B68EE; 
+    -webkit-box-shadow:: 0 0 18px #7B68EE; 
+    -moz-box-shadow: 0 0 18px #7B68EE;
+    box-shadow: 0 0 18px #7B68EE;
+    border: #9370DB solid 1px;
+}
+#thumbsUsers 
+{
+	width:1100px;
+	height:70px;
+	float:left;
+	text-align:center;
+}
+#rodape 
+{
+	width:1010px;
+	height:70px;
+	float:left;
+	text-align:right;
+	padding-right: 90px;
+}
+#rodape a 
+{
+	text-decoration:none;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+#rodape a:hover 
+{
+	color:#6e5ba4;
+}
+/* Pesquisa não logada */
+.nav
+{
+    list-style:none;
+}   
+#pesquisaOff
+{
+    margin-top: 2000px;
+    background-image: url(img/bg.jpg);
+    background-repeat: repeat;
+    width: 100%;
+    clear: both;
+    bottom: 0px;
+}
+#pesquisaOff .separadorTop
+{
+    background: url(img/white_vert.jpg);
+    background-repeat:repeat-x;
+    width: 100%;
+    height: 599px;
+    margin-bottom: 10px;
+}
+#pesquisaOff .separadorBottom
+{
+    background: url(img/purple_vert.jpg);
+    background-repeat:repeat-x;
+    width: 100%;
+    height: 599px;
+    margin-top: 30px;
+}
+#net3
+{
+    font-family: 'Rokkitt' , serif;
+    color: #5C294A;
+    text-align: center;
+    background: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#pesquisaOff #conteudoPes
+{
+    width: 70%;
+    margin: 0 auto;
+    height: 1000px;
+}
+#pesquisaOff #conteudoPes #topPes
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#pesquisaOff #conteudoPes #topPes #logoPes
+{
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 55px;
+    width: 120px;
+}
+#pesquisaOff #conteudoPes #topPes #voltar
+{
+    display: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#pesquisaOff #conteudoPes #topPes #voltar .nav a
+{
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Salsa' , cursive;
+    color: #fff;
+}
+#pesquisaOff #conteudoPes #topPes #voltar .nav a:hover
+{
+    color: #9370DB;
+    -webkit-text-shadow:: 0 0 18px #7B68EE; 
+    -moz-text-shadow: 0 0 18px #7B68EE;
+    text-shadow: 0 0 18px #7B68EE;
+}
+#pesquisaOff #lateralPes
+{
+    display: block;
+    float: left;
+    width: 25%;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+#pesquisaOff #lateralPes h3
+{
+    color: #fff;
+    text-align: center;
+    font-family: 'Salsa' , cursive;
+    font-weight: bold;
+}
+#pesquisaOff #lateralPes img
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+#pesquisaOff #lateralPes .link
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Rokkitt' , serif;   
+}
+#pesquisaOff #lateralPes .link:hover
+{
+    color: #9370DB;
+}
+#pesquisaOff #centroPes
+{
+    display: block;
+    float: left;
+    width: 70%;
+    margin-left: 10px;
+    margin-top: 15px;
+    max-height: 850px;
+    height: auto;
+}
+#pesquisaOff #conteudoPes #centroPes h3
+{
+    color: #fff;
+    font-family: 'Salsa' , cursive;
+    font-weight: bold;
+    display: block;
+    float: left;
+}
+/* Text box de pesquisa */
+#pesquisaOff #conteudoPes #searchwrapper
+{
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    display: block;
+    float: right;
+    width: 300px;
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 50px;
+    position: relative;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#DCE6CF), to(#ffffff));
+    background: -moz-linear-gradient(top, #DCE6CF, #ffffff); /* Resolve o problema do degradê no IE9 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#DCE6CF', EndColorStr='#ffffff');
+}
+#pesquisaOff #conteudoPes #searchwrapper form
+{
+    display: inline;
+}
+#pesquisaOff #conteudoPes .searchbox
+{
+    border: 0px;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 10px;
+    width: 250px;
+    height: 25px;
+}
+#pesquisaOff #conteudoPes .searchbox_submit
+{
+    border: 0px;
+    background: transparent url(img/find.png) no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 265px;
+    width: 22px;
+    height: 22px;
+}
+
+

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3992D1C-E7AC-4E58-94B2-83632633525C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClsLibBLL</RootNamespace>
+    <AssemblyName>ClsLibBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ChavesBll.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Base_AP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\Base_AP.dll</HintPath>
+    </Reference>
+    <Reference Include="Base_Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\Base_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Boleto.Net">
+      <HintPath>..\DLLs\Boleto.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\DLLs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB">
+      <HintPath>..\DLLs\0.90\MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.GridFS">
+      <HintPath>..\DLLs\0.90\MongoDB.GridFS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boleto\ClsBoletoBLL.cs" />
+    <Compile Include="ClsCategoriaServicoBLL.cs" />
+    <Compile Include="ClsConstantesBLL.cs" />
+    <Compile Include="ClsContaBancariaBLL.cs" />
+    <Compile Include="ClsAdministradorBLL.cs" />
+    <Compile Include="ClsAtualizacaoBLL.cs" />
+    <Compile Include="ClsCatalogoEnderecosBLL.cs" />
+    <Compile Include="ClsContatoBLL.cs" />
+    <Compile Include="ClsCurriculumBLL.cs" />
+    <Compile Include="ClsDenunciaBLL.cs" />
+    <Compile Include="ClsEmailTempBLL.cs" />
+    <Compile Include="ClsEnderecoBLL.cs" />
+    <Compile Include="ClsHistoricoServicoBLL.cs" />
+    <Compile Include="ClsImagemBLL.cs" />
+    <Compile Include="ClsNotificacaoBLL.cs" />
+    <Compile Include="ClsOcorrenciaBLL.cs" />
+    <Compile Include="ClsOrcamentoBLL.cs" />
+    <Compile Include="ClsRegistroBLL.cs" />
+    <Compile Include="ClsRelatoriosBLL.cs" />
+    <Compile Include="ClsServicoBLL.cs" />
+    <Compile Include="ClsUsuarioBLL.cs" />
+    <Compile Include="ClsUsuLogado.cs" />
+    <Compile Include="clsUtilidades.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Paypal\ClsAdaptivePaymentBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chrisimos\Chrisimos.csproj">
+      <Project>{81771D27-6B3C-4114-85BB-2F92576A6BC5}</Project>
+      <Name>Chrisimos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClsLibDAL\ClsLibDAL.csproj">
+      <Project>{C98CA3D0-A1D5-4827-B094-0FE99BE05009}</Project>
+      <Name>ClsLibDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{23237FAA-E620-4903-A586-1B02EF1A0002}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="constantes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="estadosCidades.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChavesBll.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

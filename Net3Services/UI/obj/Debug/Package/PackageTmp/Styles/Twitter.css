@@ -1,0 +1,83 @@
+﻿body
+{
+    background-image: url(img/bg.jpg);
+    background-repeat: repeat;
+}
+h1
+{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Salsa' , cursive, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform:uppercase;
+    padding-top: 20px;
+}
+#logo
+{
+    height: 80px;
+    width: 150px;
+    float: left;
+    display: block;
+    position: absolute;
+}
+.tweet
+{
+    /* Borda Aredondada */
+    border-radius: 10px;
+    /* Background degrade */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#DCE6CF));
+    background: -moz-linear-gradient(top, #ffffff, #DCE6CF); /* Resolve o problema do degradê no IE9 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffffff', EndColorStr='#DCE6CF');
+    /* Sombreamento */
+    -moz-box-shadow: 0 0 12px #E8E8E8;
+    -webkit-box-shadow: 0 0 12px #E8E8E8;
+    box-shadow: 0 0 12px #E8E8E8;
+    /* Resto do CSS */
+    height: 100px;
+    max-height: 100px;
+    max-width: 70%;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.tweet .foto
+{
+    display: block;
+    float: left;
+    /* O height e width com max e um hack para esta merda funcionar no ie */   
+    max-height: 80px;
+    max-width: 80px;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    border: 5px solid #3f3f3f;
+	padding: 5px;
+	background: #fff; 
+}
+.tweet .nome
+{
+    font-family: 'Rokkitt' , serif;
+    font-size: 22px;
+    display: block;
+    float: left;
+    color: #5C294A;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+.tweet p
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 110px;
+    float: left;
+    font-size: 16px;
+    width: 60%;
+    max-width: 60%;
+    height: 55px;
+}
+
+

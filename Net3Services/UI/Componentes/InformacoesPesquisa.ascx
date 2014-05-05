@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="InformacoesPesquisa.ascx.cs" Inherits="UI.Componentes.InformacoesPesquisa" %>
+<asp:PlaceHolder ID="phInformacoes" runat="server"></asp:PlaceHolder>

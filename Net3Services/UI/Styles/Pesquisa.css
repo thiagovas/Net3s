@@ -1,0 +1,85 @@
+﻿/* Pesquisa */
+.iconePesquisa
+{
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    display: block;
+    float: left;
+}
+.tituloPes
+{
+    display: block;
+    float: left;
+    width: auto;
+    color: Red;
+    font-size: 20px;
+    font-family: 'Salsa' , cursive;
+    font-weight: bold;
+    color: #5C294A;
+}
+.labelPesqisa
+{
+    display: block;
+    width: 90px;
+    min-width: 90px;
+    text-align: right;
+    float: left;
+    padding-top: 6px;
+    height: 24px;
+    min-height: 24px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#btnPesquisar
+{
+    margin-top: 8px;
+    margin-left: 228px;
+}
+.menuIcoPes
+{
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.subTituloPes
+{
+    margin-left: 10px;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Salsa' , cursive;
+    font-weight: bold;
+    color: #ffffff;
+}
+#ladoEsquerdo ul
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    list-style: none;
+}
+#ladoEsquerdo ul li a
+{
+    display: block;
+    width: 180px;
+    height: 24px;
+    margin-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+
+#ladoEsquerdo ul li a:hover
+{
+    color: #6e5ba4;
+}
+
+

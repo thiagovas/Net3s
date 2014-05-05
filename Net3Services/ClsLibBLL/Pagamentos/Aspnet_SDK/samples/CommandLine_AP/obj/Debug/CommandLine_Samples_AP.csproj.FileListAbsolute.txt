@@ -1,0 +1,1 @@
+D:\Net3s\Net3Services\ClsLibBLL\Pagamentos\Aspnet_SDK\samples\CommandLine_AP\bin\Debug\CommandLine_Samples_AP.exe.config

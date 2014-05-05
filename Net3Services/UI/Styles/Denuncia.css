@@ -1,0 +1,95 @@
+﻿body 
+{
+    margin: 0 0;
+}
+
+.cabecalho
+{
+    position: absolute;
+    z-index: 500;
+    background-image: url(img/fundoN3S.png);
+    background-repeat: repeat -y;
+    width: 100%;
+    height: 20%;
+}
+
+.logo
+{
+    position: absolute;
+    z-index: 500;
+    top: 15%;
+    left: 2%;
+}
+
+.menus
+{
+    position: absolute;
+    z-index: 500;
+    left: 75%;
+    top: 10%;
+    color: #FFFFFF;
+    font-family: Arial,Verdana;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.detalhe
+{
+    position: absolute;
+    z-index: 500;
+    top: 20%;
+    height: 80%;
+    width: 100%;
+}
+
+.rodape
+{
+    position: absolute;
+    z-index: 500;
+    background-image: url(img/fundoN3S.png);
+    background-repeat: repeat -y;
+    width: 100%;
+    height: 10%;
+    top: 100%;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.texto
+{
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.tudo
+{
+    position: absolute;
+    z-index: 500;
+    left: 25%;
+    top: 7%;
+    height: 80%;
+    width: 50%;
+}
+
+
+.tituloCadastro
+{
+    position: absolute;
+    z-index: 500;
+    color: #380442;
+    font-family: Arial,Verdana;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.linha
+{
+    position: absolute;
+    z-index: 500;
+    width: 100%;
+    color: #620074;
+    top: 7%;
+}

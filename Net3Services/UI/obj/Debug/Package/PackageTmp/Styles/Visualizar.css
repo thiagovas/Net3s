@@ -1,0 +1,103 @@
+﻿/* Contém as principais informações da página. Atua coomo se foce um título */
+#visualizacao #principal
+{
+    display: block;
+    float: none;
+}
+
+#visualizacao #principal h1
+{
+    display: block;
+    float: left;
+}
+
+#visualizacao #principal p
+{
+    display: block;
+    float: right;
+}
+
+/* Div que contém as estrelas de avaliação do conteúdo - Quando necessário */
+#visualizacao #principal #avali
+{
+    display: block;
+    float: left;
+    margin-left: 25px;
+    color: #FFD700;
+    font-size: 18px;
+}
+
+/* Div que contém os botões de compartilhamento nas redes sociais - Quando necessário */ 
+#visualizacao #principal #compartilhar
+{
+    text-align: left;
+    margin-top: 25px;
+}
+
+/* Botões de compartilhamento ans redes sociais */
+#visualizacao #principal #compartilhar .btnCompartilhar
+{
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+/* Para botões de compartilhamento do facebook e google+ que possuem um espaço estranho em branco dentro deles  */
+#visualizacao #principal #compartilhar .btnCompartilharEsp
+{
+    display: block;
+    float: left;
+}
+
+#visualizacao #conteudoVisu
+{
+    display: block;
+    float: none;
+}
+
+#visualizacao #conteudoVisu .link
+{
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#visualizacao #conteudoVisu .link:hover
+{
+    color: #8D4787; 
+    outline: none;
+    -webkit-text-shadow:: 0 0 18px #8D4787; 
+    -moz-text-shadow: 0 0 18px #8D4787;
+    text-shadow: 0 0 18px #8D4787;
+}
+
+#visualizacao #conteudoVisu label
+{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+#visualizacao #conteudoVisu label i
+{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#visualizacao #conteudoVisu label font
+{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+#visualizacao #conteudoVisu .valor
+{
+    display: block;
+    font-size: 12px;
+}
+
+#visualizacao #conteudoVisu .valor b
+{
+    margin-right: 5px;
+    font-weight: bolder;
+}

@@ -1,0 +1,768 @@
+﻿@charset "utf-8";
+
+/* Import da fonte usada como ícones do sistema  */
+@font-face {
+	font-family:'RaphaelIcons';
+    src: url('raphaelicons-webfont.eot');
+    src: local('☺'), 
+		url('fonts/RaphaelIcons/raphaelicons-webfont.woff') format('woff'), 
+		url('fonts/RaphaelIcons/raphaelicons-webfont.ttf') format('truetype'), 
+		url('fonts/RaphaelIcons/raphaelicons-webfont.svgwebfontKOf9F4sx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('Fonts/websymbols/websymbols-regular-webfont.eot');
+    src: url('Fonts/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/websymbols/websymbols-regular-webfont.woff') format('woff'),
+         url('Fonts/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('Fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('Fonts/modernpics/modernpics-webfont.eot');
+    src: url('Fonts/modernpics/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/modernpics/modernpics-webfont.woff') format('woff'),
+         url('Fonts/modernpics/modernpics-webfont.ttf') format('truetype'),
+         url('Fonts/modernpics/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url('Fonts/FortAwesome/fontawesome-webfont.eot');
+  src: url('Fonts/FortAwesome/fontawesome-webfont.eot?#iefix') format('eot'), 
+       url('Fonts/FortAwesome/fontawesome-webfont.woff') format('woff'), 
+       url('Fonts/FortAwesome/fontawesome-webfont.ttf') format('truetype'), 
+       url('Fonts/FortAwesome/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Set de icones utilizados no sistema */
+.iconesUm
+{
+    font-family: WebSymbolsRegular;
+    color: #3f3f3f;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.iconesDois
+{
+    font-family: ModernPictogramsNormal;
+    color: #3f3f3f;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.iconesTres
+{
+    font-family: RaphaelIcons;
+    color: #3f3f3f;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+/* CSS Aplicado na barra que mostra os erros, mensagens e alertas do sistema */
+.alert
+{
+    overflow: hidden;
+    width: auto;
+    z-index: 99999;
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 20%;
+    right: 20%;
+    background-color: #3f3f3f;
+    height: 10px;
+    color: #fff;
+    text-align: center;
+    font: 15px/25px arial, sans-serif;
+    cursor: pointer;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+     -moz-box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+/* Css comum a todas as páginas do sistema */
+body, div, h1, h2, h3, h4, p, ul, ol, li, img, header, section, aside, footer, button {
+	margin: 0; padding: 0; border: 0; list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #b6b6ab;
+}
+
+a:hover {
+	color: #8D4787; 
+    outline: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif; 
+	font-weight: normal;
+} 
+
+h2 {
+	font-size: 22px;
+	line-height: 28px;
+}
+	
+body {
+	background: #f6f6ee url(img/fundo.jpg);
+	font-family : "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-size: 12px;
+	}	
+
+/* Cabecalho */	 
+#cabecalho 
+{
+	background: url(img/topo.jpg);
+	-moz-box-shadow: inset 0px -2px 3px #480508;
+	-khtml-box-shadow: inset 0px -2px 3px #480508;				
+	-webkit-box-shadow: inset 0px -2px 3px #480508;
+	box-shadow: inset 0px -2px 3px #480508;
+	border-bottom: 1px solid #fffffb;
+	height: 70px;
+	width: 100%;
+	display: block;
+	position: fixed;
+}
+
+#cabecalho #menu {
+  margin-top: 10px;
+}
+
+#cabecalho #menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+}
+
+#cabecalho #menu li {
+  float: left;
+}
+
+#cabecalho #menu #menu-trigger, #notifi-trigger {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  padding: 0 8px;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+  border-radius: 3px 3px 0 0;
+  Color: #fff;
+}
+
+#cabecalho #menu #subMenu .active, #notificacoes .active {
+  background: #fff;
+  color: #5C294A;
+}
+
+#cabecalho #menu #conteudoMenu, #conteudoNotifi {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  background-image: -o-linear-gradient(top, #fff, #eee);
+  background-image: linear-gradient(top, #fff, #eee);
+  padding: 15px;
+  box-shadow: 0 2px 2px 1px #8B8989;
+  border-radius: 3px 0px 3px 3px;
+}
+
+#cabecalho #menu #conteudoMenu{
+  width: 120px;
+}
+
+#cabecalho #menu #conteudoMenu a{
+  color: #3f3f3f;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#cabecalho #menu #conteudoMenu a:hover{
+  opacity: 1.0;
+}
+
+#cabecalho #menu #conteudoNotifi{
+  width: 300px;
+  margin-right: 65px;
+}
+
+#cabecalho #menu #conteudoNotifi p
+{
+    display: block;
+    border-bottom: 1px solid #696969;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    opacity: 0.5;
+}
+
+#cabecalho #menu #conteudoNotifi p:hover
+{
+    opacity: 1.0;
+}
+
+#cabecalho #menu #conteudoNotifi p img
+{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+#cabecalho #menu #conteudoNotifi p a
+{
+    color: #696969;
+}
+
+#cabecalho #menu #conteudoNotifi p a:hover
+{
+    color: #696969;
+}
+
+#cabecalho .contCabecalho {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+#cabecalho .contCabecalho .logo {
+	float:left;
+	width: 110px;
+	height: 40px;
+	border: none;
+    display: block;
+    padding-top: 3px;
+	-moz-box-shadow: none;
+    box-shadow: inset none;
+	-khtml-box-shadow: none;				
+	-webkit-box-shadow: none;
+}
+
+#cabecalho .contCabecalho .busca
+{
+    float: left;
+    width: 250px;
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+	
+/* Conteúdo */	
+#conteudo {	
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+#meio{
+    width: 700px;
+    display: block;
+	float: right;
+    margin: 0px auto 30px auto ;
+}
+
+#meio h1{
+  font-family: Verdana, sans-serif;
+  color: #3f3f3f;
+}
+
+#meio h1 i {
+    margin-right: 8px;
+}
+
+#meio h2 i {
+    margin-right: 8px;
+}
+
+/* Menu Lateral */
+#lateral{
+    width: 250px;
+	margin: 0px auto 30px auto ;
+    display: block;
+	float: left;
+}
+
+#lateral .perfil{
+    width: 130px;
+    height:130px;
+    padding: 6px 6px 10px 6px;
+    display:block;
+    background:#E9EAEB;
+	margin: 5px auto;
+	border: 1px solid #E1E1E1;
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 2px 2px #D7D7D7;
+	-webkit-box-shadow: 2px 2px #D7D7D7;
+}
+
+#lateral .perfil:hover {
+ 	background-color:white;
+	opacity:0.5;
+}
+
+#lateral nav.menu{
+  margin-top: 10px;
+}
+
+#lateral nav.menu ul li a {
+	color: #3f3f3f;
+	font-size: 14px; 
+	font-weight: normal;
+	padding: 5px 8px;
+	opacity:0.5;
+}
+
+#lateral nav.menu ul li a:hover{
+  opacity:1.0;
+}
+
+#lateral nav.menu ul li a i
+{
+  font-size: 18px;
+  margin: 0px;
+  margin-right: 3px;
+}
+
+#lateral nav.menu ul li a .iconesTres
+{
+  font-size: 25px;
+  margin: 0px;
+  margin-right: 3px;
+}
+
+#lateral nav.network{  
+text-align: center;
+}
+
+#lateral nav.network img
+{
+  width: 40px;
+  height: 40px;
+  opacity:0.5; 
+}
+
+#lateral nav.network img:hover
+{
+  opacity:1.0; 
+}
+		
+.titulo {
+	clear: both;
+}
+
+.titulo h4 {
+    padding:0px;
+    background: url(img/linha.png) no-repeat center center; 
+	text-align: center;
+	font-family: Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #3f3f3f;
+    text-shadow: -1px 0 3px #D7D7D7;
+    display: block;
+    margin:10px 0px 15px 0px; 
+}
+
+.titulo h3 {
+    padding:0px;
+    display: block;
+    color: #3f3f3f;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+	margin:10px 0px 15px 0px; 
+    text-shadow: -1px 0 3px #D7D7D7;
+    font-family: Verdana, sans-serif;
+    background: url(img/linha.png) no-repeat center center; 
+}
+
+.titulo h3 a
+{
+    color: #3f3f3f;
+}
+
+
+.titulo h3 a:hover
+{
+	color: #5C294A;
+}
+
+.titulo h3 mark
+{
+    color: #3f3f3f;
+    background: none;
+    font-size: 12px;
+}
+
+/* Rodapé */
+.rodape  
+{
+	clear: both;
+	display:block;
+    margin: 30px 15px;
+	padding-top: 20px;
+	border-top: 1px solid #c9c9c0;
+}
+
+.rodape #links{
+  display: block;
+  float: left;
+  width: 90%;
+}
+
+.rodape #links p {
+  text-align: center;
+  color: #b6b6ab;
+}
+
+.rodape #links p a:hover {
+    -webkit-text-shadow: 0 0 18px #8D4787; 
+    -moz-text-shadow: 0 0 18px #8D4787;
+    text-shadow: 0 0 18px #8D4787;
+}
+
+.rodape #mongo{
+  display: block;
+  float: right;
+  width: 10%;
+}
+
+.rodape #mongo img{
+  width: 100px;
+  height: 40px;  
+}
+
+/* Botões */
+.button{
+  display: inline-block;
+  white-space: nowrap;
+  background-color: #ccc;
+  border: 1px solid #777;
+  padding: 0 1.5em;
+  margin: 0.5em;
+  font: bold 1em/2em Arial, Helvetica;
+  text-decoration: none;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+  -moz-border-radius: .2em;
+  -webkit-border-radius: .2em;
+  border-radius: .2em;
+  -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+  background-image: linear-gradient(top, #eee, #ccc);
+}
+
+.button:hover{
+  color: #5C294A;
+  background-color: #ddd;
+  background-image: linear-gradient(top, #fafafa, #ddd);
+  }
+
+.button:active{
+  -moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  position: relative;
+  top: 1px;
+}
+
+.button:focus{
+  outline: 0;
+  background: #fafafa;
+}    
+
+.button:before{
+  background: #ccc;
+  background: rgba(0,0,0,.1);
+  float: left;
+  width: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 1em 0 -1em;
+  padding: 0 .2em;
+  -moz-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+  -webkit-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+  box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+  -moz-border-radius: .15em 0 0 .15em;
+  -webkit-border-radius: .15em 0 0 .15em;
+  border-radius: .15em 0 0 .15em;
+  pointer-events: none;
+}
+
+/* Hexadecimal dos icones */
+.add:before{
+  content: "\271A";
+}
+
+.edit:before{
+  content: "\270E";
+}
+
+.delete:before{
+  content: "\2718";
+}
+
+.save:before{
+  content: "\2714";
+}
+
+.email:before{
+  content: "\2709";
+}
+
+.like:before{
+  content: "\2764";
+}
+
+.next:before{
+  content: "\279C";
+}
+
+.spark:before{
+  content: "\2737";
+}
+
+.play:before{
+  content: "\25B6";
+}
+
+.money:before { 
+  content:"\0024"; 
+}
+
+.airplane:before { 
+  content: "\2708"; 
+}
+
+.star:before { 
+  content: "\2605"; 
+}
+
+.search:before { 
+ font-family: FontAwesome;
+ content: "\f002"; 
+}
+/* Tooltips utilizados no programa */
+
+.tooltip
+{
+  margin: 2px;
+  position: relative;
+  background: #eaeaea;
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  outline: none;
+}
+
+.tooltip span
+{
+  visibility: hidden;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 999;
+  width: 230px;
+  margin-left: -127px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  opacity: .9;
+  background-color: #ddd;
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+
+.tooltip:hover
+{
+  border: 0; /* IE6 fix */
+}
+
+.tooltip:hover span
+{
+  visibility: visible;
+}
+
+.tooltip span:before,
+.tooltip span:after
+{
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid #ddd;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0;
+}
+
+.tooltip span:before
+{
+  border-top-color: #ccc;
+  bottom: -8px;
+}
+
+/* Estilo novos botões net3s */
+.nbutton {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 8px;
+    padding: 7px 15px;
+    margin-bottom: 8px;
+    background: #797979;
+    display: inline-block;
+    font-family: 'Trebuchet MS';
+    
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.nbutton:hover {
+    color: #D7D7D7;
+    background: #5C294A;
+
+    box-shadow: 0 0 9px #5C294A;
+    -moz-box-shadow: 0 0 9px #5C294A;
+    -webkit-box-shadow: 0 0 9px #5C294A;
+}
+
+.nbutton i {
+    
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Estilo Mensagem de carregando */
+.loading {
+    top: 0; 
+    left: 0;  
+    right: 0; 
+    width: 100%; 
+    height: 100%;
+    opacity: 0.8; 
+    position: fixed; 
+    z-index: 9999999; 
+    text-align: center; 
+    background-color: #000000;
+}
+
+.loading span {
+    top: 40%; 
+    left: 40%; 
+    color: #fff;
+    padding: 50px; 
+    position: fixed; 
+    font-size: 36px; 
+    border-width: 0px; 
+}
+
+.loading span i {
+    margin-right: 8px;
+}
+
+/* Estilo dos botões de compartilhamento nas redes sociais*/
+.nshare {
+    margin: 5px;
+    color: #fff;
+    font-size: 28px;
+    display: inline;
+    cursor:pointer;
+       
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.nshare:hover {
+    color: #fff;
+}
+
+.facebook {
+    background: #3b5998;
+    padding: 5px 18px;
+}
+
+.twitter {
+    background: #33CCFF;
+    padding: 5px 10px;
+}
+
+.gplus {
+    background: #C63D2D;
+    padding: 5px 12px;
+}
+
+.linkedin {
+    background: #4875B4;
+    padding: 5px 15px;
+}
+
+/* Estilo estrelas de avaliação */
+.ratingStar
+{
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+.filledRatingStar
+{
+    background-image: url(IMG/FilledStar.png);
+}
+.emptyRatingStar
+{
+    background-image: url(IMG/EmptyStar.png);
+}
+.savedRatingStar
+{
+    background-image: url(IMG/SavedStar.png);
+}

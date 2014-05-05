@@ -1,0 +1,40 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ConfirmarCadastro.aspx.cs" Inherits="UI.ConfirmarCadastro" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Net3s - Confirmar Cadastro</title>
+    <link href="../Styles/Default.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'> 
+    <script type="text/javascript" src="../Scripts/jquery-1.6.2.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="st-container">
+                <input type="radio" name="radio-set" checked="checked" id="st-control-1" />
+                <a href="#st-panel-1">Confirmar Cadastro</a>
+                <div class="st-scroll">
+                    <section class="st-panel" id="st-panel-1">
+				        <div class="st-deco" data-icon="7"></div>
+  					    <img src="Styles/img/logo.png" alt="" id="logo" />
+  					    <div id="confCadastro">
+                            <h2><asp:Label ID="lblTituloMsg" runat="server" Text="Label"></asp:Label></h2>
+                            <h4><asp:Label ID="lblMsgResposta" runat="server" Text="Label"></asp:Label></h4>
+                            <br />
+                            <a href="~/Default.aspx" class="button">Voltar ao Login</a>
+                        </div>
+                        <div id="rodape">
+                            Net3 Services © 2011&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#" TabIndex="6">Sobre</a> · <a href="#" TabIndex="7">Anúnciar</a> · <a href="#" TabIndex="8">Desenvolvedores</a> · 
+                            <a href="http://net3services.wordpress.com/" target="new" TabIndex="9">Blog</a> · <a href="#" TabIndex="10">Termos de Uso</a> · 
+                            <a href="https://twitter.com/net3s" target="new" TabIndex="11">Twitter</a> · <a href="http://www.facebook.com/net3s" target="new" TabIndex="12">Facebook</a>
+                        </div>
+                    </section>
+                </div> <!-- // st-scroll -->
+            </div> <!-- // st-container -->
+        </div>
+    </form>
+</body>
+</html>

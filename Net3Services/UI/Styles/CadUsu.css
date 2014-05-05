@@ -1,0 +1,152 @@
+﻿body {
+}
+
+.divCampos
+{
+    margin-top: 7px;    
+}
+
+a.linker
+{
+    display: block;
+    float: right;
+}
+
+a.linker:hover
+{
+    text-decoration: none;
+    color: #DB7093;    
+}
+
+a.linker:link
+{
+    color: #DB7093;
+}
+
+.imgusu
+{
+    left: 28%;
+    top: 22%;
+    width: 658px;
+    margin-right: 0px;
+    z-index: 500;
+    position: absolute;
+    vertical-align: top;
+    height: 72px;
+}
+
+.textCad
+{
+    vertical-align: top;
+    font-family: Arial, Verdana, Times New Roman;    
+    font-size: 12px;
+    font-weight: bold;
+    width: 104px;
+}
+
+.textConf
+{
+    vertical-align: top;
+    font-family: Arial, Verdana, Times New Roman;    
+    font-size: 12px;
+    width: 104px;
+}
+
+.textConf div
+{
+    text-align: center;
+    top: 33%;
+    position: absolute;
+    left: 28%;
+    height: 422px;
+    width: 648px;
+}
+
+.textEtapa
+{
+    vertical-align: top;
+    font-family: Arial, Verdana, Times New Roman;    
+    font-size: 13px;
+    font-weight: bold;
+    width: 200px;    
+}
+
+.textCad2
+{
+    vertical-align: top;
+    font-family: Arial, Verdana, Times New Roman;    
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    left: 83px;
+}
+
+.obs
+{
+    font-size: 10px;
+    font-family: Arial, Verdana, Times New Roman;    
+}
+
+.erro
+{
+    font-size: 12px;
+    font-family: Arial, Verdana, Times New Roman;  
+    color: Red;  
+}
+
+.wizard
+{
+    text-align: center;
+    top: 38%;
+    position: absolute;
+    left: 28%;
+    height: 422px;
+    width: 648px;
+}
+
+
+.campos
+{
+    font-family: Arial, Verdana, Times New Roman;    
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+.espaco
+{
+    padding-top: 3px;    
+}
+
+.botoesWizard
+{
+    padding-top: 5px; 
+    vertical-align: middle;
+    background-color: #993366;
+    color: #F3F3F3;
+    border-color: #F3F3F3;
+    border-width: 2px;
+    border-style: solid;
+    font-size: small;
+    font-family: Arial, Verdana, Times New Roman;
+    width: 90px;
+    height: 25px; 
+    text-decoration: none;  
+    text-align: center;  
+}
+
+.botoesWizard:hover
+{
+    padding-top: 7px;
+    vertical-align: middle; 
+    background-color: #F3F3F3;
+    color: #993366;
+    border-color: #993366;
+    border-width: 2px;
+    border-style: solid;
+    font-size: small;
+    font-family: Arial, Verdana, Times New Roman;
+    width: 90px;
+    height: 25px;     
+    text-decoration: none;
+}

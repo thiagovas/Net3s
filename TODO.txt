@@ -1,0 +1,4 @@
+No método buscar notificações, retornar a busca ordenada por data(da mais nova até a mais velha)
+
+Isso é pra bem depois, pra depois de mudarmos de linguagem até:
+- Pesquisar sobre a biblioteca GSON (Converte arquivos JSON em objetos e vice-versa) do Google, para talvez criarmos uma.

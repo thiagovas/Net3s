@@ -1,0 +1,72 @@
+﻿ul.tabs
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 22px; /*--Set height of tabs--*/
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    width: 100%;
+}
+ul.tabs li
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 21px; /*--Subtract 1px from the height of the unordered list--*/
+    line-height: 21px; /*--Vertically aligns the text within the tab--*/
+    border: 1px solid #999;
+    border-left: none;
+    margin-bottom: -1px; /*--Pull the list item down 1px--*/
+    overflow: hidden;
+    position: static;
+    background: #3f3f3f;
+}
+ul.tabs li a
+{
+    text-decoration: none;
+    font-family: 'Rokkitt' , serif;
+    display: block;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.tabs li a:hover
+{
+    color: #fff;
+    background: #5C294A;
+}
+html ul.tabs li.active a
+{
+    color: #000;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover
+{
+    color: #5C294A;
+    /*--Makes sure that the active tab does not listen to the hover properties--*/
+    background: #EEE9E9;
+    border-bottom: 1px solid #EEE9E9; /*--Makes the active tab look like it's connected with its content--*/
+}
+.tab_container
+{
+    border: 1px solid #999;
+    border-top: none;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #EEE9E9;
+    margin-bottom: 10px;
+}
+.tab_content
+{
+    min-height: 320px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: Arial, Verdana, Tahoma;
+}

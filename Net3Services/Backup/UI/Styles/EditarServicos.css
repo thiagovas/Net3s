@@ -1,0 +1,53 @@
+﻿#tudo
+{
+    display: block;
+    min-width: 410px;
+    position: absolute;
+}
+
+.error
+{
+    font-family: Arial, Calibri, Times New Roman;
+    color: Red;
+    font-size: 12px;    
+}
+    
+#tudo #cabecalho
+{
+    display: block;
+    width: 100%;
+    background-image: url('IMG/fundoN3S.png');
+    padding-bottom: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+    
+#tudo #cabecalho .titulo
+{
+    display: block;
+    float: left;
+    margin-left: 15px;
+    text-align: left;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+    
+#tudo #cabecalho .fechar
+{
+    display: block;
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+    
+#tudo #corpo
+{
+    display: block;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+    
+
+

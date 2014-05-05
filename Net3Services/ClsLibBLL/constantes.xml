@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <chaves>
+        <chave>
+            <id>recuperarSenha</id>
+            <valor>paui-podole</valor>
+        </chave>
+    </chaves>
+    
+    <regexes>
+        <regex>
+            <id>usuarioLogin</id>
+            <valor>^[a-zA-Z0-9-_.]{2,28}$</valor>
+        </regex>
+        <regex>
+            <id>usuarioNome</id>
+            <valor>^[a-zA-Z0-9 :Wh -áàãâäÁÀÃÂÄéèëêÉÈËÊíìîïÍÌÎÏôõòóöÔÕÒÓÖüúùûÜÚÙÜçÇ]{2,20}$</valor>
+        </regex>
+        <regex>
+            <id>usuarioSenha</id>
+            <valor>^[a-zA-Z0-9 :Wh .-_;áàãâäÁÀÃÂÄéèëêÉÈËÊíìîïÍÌÎÏôõòóöÔÕÒÓÖüúùûÜÚÙÜçÇ]{2,20}$</valor>
+        </regex>
+        <regex>
+            <id>usuarioEmail</id>
+            <valor>^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9a-zA-Z.-]*(.){1}[a-zA-Z]{2,4})+$</valor>
+        </regex>
+    </regexes>
+</root>

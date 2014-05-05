@@ -1,0 +1,87 @@
+﻿/* Usado em todas as páginas de configuração */
+.postback
+{
+    display: none;
+}
+
+/* Configurações Gerais */
+#configGeral
+{
+    display: block;
+    width: 100%;
+}
+#configGeral .lblGeral
+{
+    display: block;
+    width: 125px;
+    text-align: right;
+    float: left;
+    padding-top: 6px;
+    height: 24px;
+    margin-right: 5px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+/* Configurações Imagem de Pefil */
+#configFoto
+{
+    display: block;
+    width: 100%;
+    margin-top: 45px;
+}
+#configFoto #foto
+{
+    display: block;
+    float: left;
+    margin-right: 15px;
+    border-radius: 5px;
+    padding: 3px;
+	background: #EEE9E9; 
+    border: 2px solid #3f3f3f;
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+    min-height: 110px;
+    max-width: 110px;
+    max-height: 110px;
+}
+#configFoto .erroUpload
+{
+    color: Red;
+}
+#configFoto .sucessoUpload
+{
+    color: Green;
+}
+/* Configuração de endereços */
+#configEndereco
+{
+    display: block;
+    width: 100%;
+    margin-top: 45px;
+}
+#configEndereco label
+{
+    display: block;
+    width: 85px;
+    height: 24px;
+    min-width: 85px;
+    min-height: 24px;
+    max-width: 85px;
+    max-height: 24px;
+    text-align: right;
+    float: left;
+    padding-top: 6px;
+    margin-right: 5px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+#configEndereco #botao
+{
+    display: block;
+    float: left;
+    margin-left: 190px;
+}
+
+
+

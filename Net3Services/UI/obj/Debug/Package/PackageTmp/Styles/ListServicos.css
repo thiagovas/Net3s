@@ -1,0 +1,104 @@
+﻿/* Listar Serviços */
+.servicoLista
+{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #E7E2DC;
+}
+.servicoLista .botoes .img
+{
+    padding-left: 30px;
+    margin-right: 10px;
+    height: 75px;
+    width: 75px;
+    float: left;
+}
+.servicoLista h4
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: Arial, Verdana, Tahoma;
+    color: #5C294A;
+    display: block;
+    float: left;
+    font-size: 15px;
+}
+.servicoLista label
+{
+    font-weight: bold;
+}
+.servicoLista .botoes
+{
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+/* Visualizar serviço */
+#visuServico
+{
+    width: 100%;
+    font-size: 12px;
+    display: block;
+}
+#visuServico #principal
+{
+    width: 100%;
+    display: block;
+}
+#visuServico #principal .btnCompartilhar
+{
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+/* Para botões de compartilhamento do facebook e google+ que possuem um espaço estranho em branco dentro deles  */
+#visuServico #principal .btnCompartilharEsp
+{
+    display: block;
+    float: left;
+}
+#visuServico #conteudoServ
+{
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+#visuServico #conteudoServ label
+{
+    float: left;
+    width: 150px;
+    text-align: right;
+    font-size: 12px;
+    display: block;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#visuServico #principal .imgCategoria
+{
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+#visuServico #principal  h3
+{
+   display: block;
+   float: left;
+}
+#visuServico #principal #avali
+{
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#visuServico #principal #compartilhar
+{
+    text-align: left;
+    margin-top: 15px;
+}

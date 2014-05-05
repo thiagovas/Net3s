@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="UI.User.Master" %>
+<%@ Register TagPrefix="n3s" TagName="notificacoes" Src="~/Componentes/Notificacoes.ascx" %>
+<%@ Register TagPrefix="n3s" TagName="network" Src="~/Componentes/displayNetwork.ascx" %>
+<%@ Register TagPrefix="n3s" TagName="acoes" Src="~/Componentes/Acoes.ascx" %>
+<%@ Register TagPrefix="n3s" TagName="menu" Src="~/Componentes/Menu.ascx" %>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Net3s</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" />
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Styles/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Styles/font-awesome.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Styles/jquery.confirm.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.confirm.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr-1.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.colorbox-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var idLog = $("#idLog").val();
+            var idUrl = $("#idUrl").val();
+
+            $('#removCont').click(function () {
+                var elem = $(this).closest('.item');
+                $.confirm({
+                    'title': 'Excluir Contato',
+                    'message': 'Deseja realmente remover este usuário ao seu network?',
+                    'buttons': {
+                        'Sim': {
+                            'action': function () {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "Perfil.aspx/RemoverNetwork",
+                                    data: "{'idCont':'"+idUrl+"','idUsu':'"+idLog+"'}",
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    success: location.reload()
+                                });
+                            }
+                        }, 'Não': { /* Não faz nada e fecha a mensagem */
+                        }
+                    }
+                });
+            });
+
+            /* Abre o light box de solicitar orçamento */
+            $('#soliOrcamento').colorbox({
+                width: "50%",
+                height: "50%",
+                transition: "fade",
+                iframe: true,
+                escKey: true,
+                xhrError: "Falha ao carregar conteúdo"
+            });
+
+            $('#menu-trigger').click(function () {
+                $(this).next('#conteudoMenu').slideToggle();
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active'))
+                    $(this).find('span').html('&#x25B2;')
+                else
+                    $(this).find('span').html('&#x25BC;')
+            });
+
+            $('#notifi-trigger').click(function () {
+                $(this).next('#conteudoNotifi').slideToggle();
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active'))
+                    $(this).find('span').html('&#x25B2;')
+                else
+                    $(this).find('span').html('&#x25BC;')
+            });
+        });
+
+        // Realiza a busca quando o navegador não suporta o tipo search 
+        $('.busca').keypress(function (e) {
+            var code = (e.keyCode ? e.keyCode : e.which);
+            if (code == 13) {
+                var busca = $('.busca').val();
+                window.location = "../User/Pesquisa.aspx?paran=" + busca;
+            }
+        });
+
+        // Realiza a quando utilizar o sistema de voz 
+        function efetuarBuscaFala(event) {
+            var busca = $('.busca').val();
+            window.location = "../User/Pesquisa.aspx?paran=" + busca;
+        }
+
+        // Realiza a busca quando pressionar enter no campo
+        function efetuarBuscaEnter(input) {
+            var busca = $('.busca').val();
+            window.location = "../User/Pesquisa.aspx?paran=" + busca;
+        }
+    </script>
+</head>
+<body>
+   <input type="hidden" id="idUrl" value="<%= this.idUrl %>" />
+   <input type="hidden" id="idLog" value="<%= this.idLog %>" />
+    <header id="cabecalho">
+		<div class="contCabecalho">
+  		    <a href="../User/Perfil.aspx?id=<%= this.idLog %>"><img src="../Styles/img/logo.png" class="logo" /></a>
+            <input type="search" name="busca" onsearch="efetuarBuscaEnter(this)" class="busca" autosave="busca_net3s" results="5" placeholder="Buscar" grammar="builtin:search" 
+                x-webkit-speech="" lang="pt-br" speech="" onwebkitspeechchange="efetuarBuscaFala()"/>
+            <nav id="menu">
+            <ul>
+                <li id="notificacoes">
+                    <a id="notifi-trigger" href="#">Notificações <span>&#x25BC;</span></a>
+                    <div id="conteudoNotifi">
+                        <n3s:notificacoes ID="notificacoesN3S" runat="server" />
+                    </div>
+                </li>
+                <li id="subMenu">
+                    <a id="menu-trigger" href="#"><%= this.nomeUsu %> <span>&#x25BC;</span></a>
+                    <div id="conteudoMenu">
+                        <a href="../User/Perfil.aspx?id=<%= this.idLog %>">Perfil</a><br />
+                        <a href="../User/Atualizacoes.aspx?id=<%= this.idLog %>">Atualizações</a><br />
+                        <a href="../User/ConfigGeral.aspx?id=<%= this.idLog %>">Configurações</a><br />
+                        <a href="../Logout.aspx">Sair</a><br />
+                    </div>
+                </li>
+            </ul>
+            </nav>
+		</div>
+	</header>
+    <div id="conteudo">
+        <div id="lateral">
+            <a href="../User/Perfil.aspx?id=<%= this.idUrl %>"><img src="../Componentes/BuscaImagens.ashx?id=<%= this.nomeFoto %>" alt="" class="perfil" /></a>
+            <n3s:menu runat="server" ID="menuPrincipal" />
+            <n3s:network runat="server" ID="networkComp" />
+            <n3s:acoes runat="server" ID="acoes" />
+        </div>
+        <div id="meio">
+            <form id="form1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </div>
+        <footer class="rodape">
+			<nav id="links">
+                <p>Copyright (c) 2011 - NET3 Services. Todos os direitos reservados.</p>
+			    <p><a href="#">Sobre</a> | <a href="#">Ajuda</a> | <a href="#">Anúncio</a></p>
+			</nav>
+            <nav id="mongo">
+			    <a href="http://www.mongodb.org/" target="new"><img src="../Styles/img/logoMongoDb.png" /></a>
+			</nav>
+		</footer>
+    </div>
+</body>
+</html>

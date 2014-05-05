@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{146149DF-0DA3-456C-A26D-DEB74AF677E4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIAdmin</RootNamespace>
+    <AssemblyName>UIAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB, Version=0.90.0.1, Culture=neutral, PublicKeyToken=f61bd00ba2535278, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\0.90\MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.GridFS, Version=0.90.0.1, Culture=neutral, PublicKeyToken=f61bd00ba2535278, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\0.90\MongoDB.GridFS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AtenderDenuncia.aspx" />
+    <Content Include="Admin\CadastroAdm.aspx" />
+    <Content Include="Admin\CadEnderecos.aspx" />
+    <Content Include="Admin\CategoriasServico.aspx" />
+    <Content Include="Admin\Perfil.aspx" />
+    <Content Include="Componentes\Denuncia.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="LoginADM2.aspx" />
+    <Content Include="Scripts\Accordion.js" />
+    <Content Include="Scripts\AtenderDenuncia.js" />
+    <Content Include="Scripts\ChamaAD.js" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery-modal-1.0.js" />
+    <Content Include="Scripts\LightBox.js" />
+    <Content Include="Scripts\MenuPerfil.js" />
+    <Content Include="Styles\AdmCss.css" />
+    <Content Include="Styles\AtenderDenuncia.css" />
+    <Content Include="Styles\Botoes.css" />
+    <Content Include="Styles\CadasAdm.css" />
+    <Content Include="Styles\img\addToNetwork.png" />
+    <Content Include="Styles\img\admin.png" />
+    <Content Include="Styles\img\cadastrar.png" />
+    <Content Include="Styles\img\EmptyStar.png" />
+    <Content Include="Styles\img\entrar.png" />
+    <Content Include="Styles\img\entrarHover.png" />
+    <Content Include="Styles\img\FilledStar.png" />
+    <Content Include="Styles\img\fundo.jpg" />
+    <Content Include="Styles\img\fundoBotao.gif" />
+    <Content Include="Styles\img\fundoBotao_span.gif" />
+    <Content Include="Styles\img\fundoN3S.jpg" />
+    <Content Include="Styles\img\fundoN3S.png" />
+    <Content Include="Styles\img\icon_close.png" />
+    <Content Include="Styles\img\loading.gif" />
+    <Content Include="Styles\img\logoADM.png" />
+    <Content Include="Styles\img\logon3s.png" />
+    <Content Include="Styles\img\mongo.png" />
+    <Content Include="Styles\img\N3SADM.png" />
+    <Content Include="Styles\img\SavedStar.png" />
+    <Content Include="Styles\img\social.png" />
+    <Content Include="Styles\LightBox.css" />
+    <Content Include="Styles\MasterAdm.css" />
+    <Content Include="Styles\menuh.css" />
+    <Content Include="Styles\menu\back.gif" />
+    <Content Include="Styles\menu\bg.jpg" />
+    <Content Include="Styles\menu\hover.jpg" />
+    <Content Include="Styles\menu\menu_style.css" />
+    <Content Include="Styles\ParfilAdm.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="XML\estadosCidades.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AtenderDenuncia.aspx.cs">
+      <DependentUpon>AtenderDenuncia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AtenderDenuncia.aspx.designer.cs">
+      <DependentUpon>AtenderDenuncia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BuscaImagens.ashx.cs">
+      <DependentUpon>BuscaImagens.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CadastroAdm.aspx.cs">
+      <DependentUpon>CadastroAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CadastroAdm.aspx.designer.cs">
+      <DependentUpon>CadastroAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CadEnderecos.aspx.cs">
+      <DependentUpon>CadEnderecos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CadEnderecos.aspx.designer.cs">
+      <DependentUpon>CadEnderecos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoriasServico.aspx.cs">
+      <DependentUpon>CategoriasServico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoriasServico.aspx.designer.cs">
+      <DependentUpon>CategoriasServico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Perfil.Master.cs">
+      <DependentUpon>Perfil.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Perfil.Master.designer.cs">
+      <DependentUpon>Perfil.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\BuscaImagens.ashx.cs">
+      <DependentUpon>BuscaImagens.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Denuncia.ascx.cs">
+      <DependentUpon>Denuncia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Componentes\Denuncia.ascx.designer.cs">
+      <DependentUpon>Denuncia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoginADM.Master.cs">
+      <DependentUpon>LoginADM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginADM.Master.designer.cs">
+      <DependentUpon>LoginADM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LoginADM2.aspx.cs">
+      <DependentUpon>LoginADM2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginADM2.aspx.designer.cs">
+      <DependentUpon>LoginADM2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoginADM.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClsLibBLL\ClsLibBLL.csproj">
+      <Project>{B3992D1C-E7AC-4E58-94B2-83632633525C}</Project>
+      <Name>ClsLibBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClsLibDAL\ClsLibDAL.csproj">
+      <Project>{C98CA3D0-A1D5-4827-B094-0FE99BE05009}</Project>
+      <Name>ClsLibDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{23237FAA-E620-4903-A586-1B02EF1A0002}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Perfil.Master" />
+    <Content Include="Componentes\BuscaImagens.ashx" />
+    <Content Include="Admin\BuscaImagens.ashx" />
+    <None Include="Styles\img\logon3s.pdn" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13375</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

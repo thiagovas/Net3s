@@ -1,0 +1,136 @@
+﻿/* Contém as principais informações da página. Atua coomo se foce um título */
+#visualizacao
+{
+    display: block;
+    float: none;
+}
+
+#visualizacao #title
+{
+    display: block;
+}
+
+#visualizacao #title h1 {
+    float: left;
+    display:block;
+    color: #3f3f3f;
+    font-family: Verdana, sans-serif;
+}
+
+#visualizacao #title .stars
+{
+    float: right;
+    display: block;
+    color: #EDC951;
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+#visualizacao #left {
+    display: block;
+    float: left;    
+    width: 220px;
+}
+
+#visualizacao #left img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    display:block;
+    border: 10px solid #E9EAEB;
+}
+
+#visualizacao #right {
+    width: calc(100% - 235px);
+    width: -moz-calc(100% - 235px);
+    width: -webkit-calc(100% - 235px);
+    
+    float: right;
+    display: block;
+    padding-left: 10px;
+}
+
+#visualizacao #right #info{
+    width: auto;
+    float: right;
+    display: inline-block;
+    margin: 5px 5px 10px 10px;
+}
+
+#visualizacao #right #info #price {
+    width: auto;
+    color: #FFD700;
+    display: block;
+    font-size: 18px;
+    padding: 7px 15px; 
+    background: #797979;
+    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#visualizacao #right #info .nbutton {
+    width: auto;
+    display: block;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#visualizacao #btn_share {
+    display:block;
+    color: #3f3f3f;
+    cursor:pointer;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+#visualizacao #btn_share i {
+    margin-right: 8px;
+}
+
+#visualizacao #share {
+    display:block;
+    padding-top: 20px;
+}
+
+#visualizacao #btn_location {
+    display:block;
+    color: #3f3f3f;
+    cursor:pointer;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+#visualizacao #btn_location i {
+    margin-right: 8px;
+}
+
+#visualizacao #location {
+    display:block;
+    padding-top: 20px;
+}
+
+#visualizacao #location label {
+    color: #3f3f3f;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    font-family: Verdana, sans-serif;
+}
+
+#visualizacao #location .valor {
+    color: #000;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+
+
+

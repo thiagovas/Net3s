@@ -1,0 +1,161 @@
+/*
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs
+{
+    position: relative;
+    padding: .2em;
+    zoom: 1;
+}
+/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav
+{
+    margin: 0;
+    margin-bottom: 14px;
+    padding-left:20px;
+}
+.ui-tabs .ui-tabs-nav li
+{
+    list-style: none;
+    float: left;
+    top: 1px;
+    margin-left: 1px;
+    border-bottom: 0 !important;
+    padding: 0;
+    white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li a
+{
+    width: 150px;
+    text-align: center;
+    margin-right: 2px;
+    float: left;
+    padding: .5em 1em;
+    text-decoration: none;
+    font-size: 15px;   
+    background-color: #3f3f3f;
+    color: #ffffff;
+    border: solid 2px #3f3f3f;
+    border-bottom: none;
+    border-top-left-radius: 25px 25px;
+    border-top-right-radius: 25px 25px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected
+{
+    margin-bottom: 0;
+    padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a
+{    
+    background-color: #EEE9E9;
+    color: #000000;
+    border-bottom: none;
+    cursor: default;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a:hover, .ui-tabs .ui-tabs-nav li.ui-state-disabled a:hover, .ui-tabs .ui-tabs-nav li.ui-state-processing a:hover
+{    
+    background: #5C294A;
+    color: #ffffff;
+}
+.ui-tabs .ui-tabs-nav li a:hover
+{
+    background: #5C294A;
+    color: #ffffff;   
+    border-bottom: solid 1px #3f3f3f;
+    cursor: default;
+ 
+    border-bottom: none;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a
+{
+    cursor: pointer;
+}
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel
+{
+    display: block;
+    border-width: 0;
+    padding: 2px;
+    background: none;
+}
+
+.ui-tabs .ui-tabs-hide
+{
+    display: none !important;
+}
+#tabs div
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    min-height: 295px;
+    border: solid 2px #3f3f3f;
+}
+#tabs div hr
+{
+    margin: 15px 10px;
+}
+
+/* Post na página do usuário */
+#tabs .post
+{
+    width: 100%;
+    border: 0px;
+    margin-bottom: 10px;
+}
+#tabs .post a
+{
+    color: #DB7367;
+    border: none;
+    text-decoration: none;
+}
+#tabs .post h3
+{
+    padding: 7px 0px 0px 4%;
+    letter-spacing: -.5px;
+    float: left;
+}
+#tabs .post .clasifiServ
+{
+    float: left;
+    margin-top: 1.5%;
+    margin-left: 1%;
+}
+#tabs .post .postTexto
+{
+    text-align: justify;
+}
+#tabs .post .data
+{
+    float: right;
+    padding: 9px 7px 0px 0px;
+}
+#tabs .post .meta
+{
+    margin-bottom: 30px;
+    padding: 0px 30px 0px 30px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+}
+#tabs .post .meta .autor
+{
+    float: left;
+}
+#tabs .post .imgPost
+{
+    padding-left: 10px;
+    margin-right: 10px;
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+

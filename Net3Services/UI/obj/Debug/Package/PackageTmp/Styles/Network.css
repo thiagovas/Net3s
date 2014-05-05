@@ -1,0 +1,43 @@
+﻿#tudo
+{
+    display: block;
+    min-width: 450px;
+    position: absolute;
+    height: auto;
+    background: #EEE9E9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#tudo #cabecalho
+{
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url('IMG/fundoN3S.jpg');
+    padding-bottom: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#tudo #cabecalho .titulo
+{   
+    display: block;
+    float: left;
+    margin-left: 15px;
+    text-align: left;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+#tudo #cabecalho .fechar
+{
+    display: block;
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+#tudo #corpo
+{
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 8px;
+}

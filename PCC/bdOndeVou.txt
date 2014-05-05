@@ -1,0 +1,100 @@
+where I go
+Onde vou
+
+
+create database bdondevou;
+
+create table usuarios(
+idUsuario integer unsigned auto_increment not null,
+nomeUsuario varchar(80) not null,
+nascUsuario Datetime not null,
+dataCadastro Datetime not null,
+sexo bit not null,
+idioma varchar(50) not null,
+email varchar(80) not null,
+login varchar(32) not null,
+senha varchar(28) not null,
+estadoCivil varchar(10),
+telefone varchar(13),
+celular varchar(13),
+foto varchar(120),
+site varchar(80),
+twitter varchar(50),
+facebook varchar(60),
+descricao varchar(240),
+primary key(idUsuario)
+);
+
+create table relacoes(
+idRelacao integer unsigned auto_increment not null,
+idUsu1 integer unsigned not null,
+idUsu2 integer unsigned not null,
+primary key(idRelacao)
+);
+
+create table locais(
+idLocal integer unsigned auto_increment not null,
+nomeLocal varchar(80) not null,
+telefone varchar(13),
+foto1 varchar(120),
+foto2 varchar(120),
+foto3 varchar(120),
+foto4 varchar(120),
+foto5 varchar(120),
+descricao varchar(240),
+site varchar(80),
+twitter varchar(50),
+facebook varchar(60),
+categ_idCategLocal integer unsigned not null,
+foreign key(categ_idCategLocal) references categoriaLocal(idCategLocal),
+primary key(idLocal)
+);
+
+---categoriaLocal servirá para melhorar as buscas dos usuários,
+--ou seja, pensando em usabiidade, a categoria serve para oferecer aos usuários uma opção de busca mais refinada
+create table categoriaLocal(
+idCategLocal integer unsigned not null,
+nomeCategLocal varchar(80) not null,
+primary key(idCategLocal)
+);
+
+create table eventos(
+idEvento integer unsigned auto_increment not null,
+nomeEvento varchar(80) not null,
+dataEvento Date not null,
+horainicio time not null,
+horafinal time,
+foto varchar(120),
+descricao varchar(240),
+local_idLocal integer unsigned not null,
+foreign key(local_idLocal) references locais(idLocal)
+);
+
+create table enderecosUsuarios(
+idEndereco integer unsigned auto_increment not null,
+endereco varchar(80) not null,
+numero integer(5) unsigned not null,
+cidade varchar(50),
+bairro varchar(50),
+estado varchar(42),
+cep varchar(15),
+pais varchar(50),
+Usuarios_idUsuario integer unsigned not null,
+foreign key(Usuarios_idUsuario) references Usuarios(idUsuario),
+primary key(idEndereco)
+);
+
+create table enderecosLocais(
+idEndereco integer unsigned auto_increment not null,
+endereco varchar(80) not null,
+numero integer(5) unsigned not null,
+cidade varchar(50),
+regiaoCidade varchar(25),
+bairro varchar(50),
+estado varchar(42),
+cep varchar(15),
+pais varchar(50),
+Locais_idLocal integer unsigned not null,
+foreign key(Locais_idLocal) references locais(idLocal),
+primary key(idEndereco)
+);

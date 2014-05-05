@@ -1,0 +1,88 @@
+﻿/* Layout referente ao mapa mostrando como chegar até o cliente */
+
+#map-container { 
+    overflow: hidden; 
+    margin-top: 20px; 
+}	
+            	
+#map {
+    width: 50%;			
+    float: left;
+    height: 400px;		
+    color: #332d2b;                
+    border-radius: 5px;
+    border: 5px solid #332d2b;
+}		
+            
+#map-directions {
+    width: 40%;	
+    float: left;
+    height: 400px;
+    overflow: visible; 
+    padding-left: 15px;		
+}
+            
+#map-directions h3 { font-size: 18px; font-weight: bold; color: #332d2b; }
+            
+table, span{ color: #332d2b;}	
+
+/* Layout da página principal do perfil */
+#meio p{
+  display: block;
+  float: right;
+}
+
+#meio h1{
+  display: block;
+  float: left;
+}
+
+#meio #info
+{
+  margin-top: 30px;
+  display: block;
+  padding-top: 10px;
+  border-top: 1px solid #3f3f3f;
+}
+
+#meio #info #infoEsquerda{
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+#meio #info #infoDireita{
+  display: block;
+  float: right;
+  width: 50%;
+}
+
+#meio #servs{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 145px;
+  display: block;
+  border-top: 1px solid #3f3f3f;
+}
+
+#meio #mapas{
+  padding-top: 10px;
+  margin-top: 10px;
+  display: block;
+  border-top: 1px solid #3f3f3f;
+}
+
+#meio .subTitulo
+{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+

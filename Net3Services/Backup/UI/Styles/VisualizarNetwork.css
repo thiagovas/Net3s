@@ -1,0 +1,69 @@
+#visuNetwork h1
+{
+    font-family: Verdana, sans-serif;
+    color: #3f3f3f;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#visuNetwork .contato
+{
+    opacity: 0.5;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3f3f3f;
+    height: 70px;
+    padding-bottom: 15px;
+}
+
+#visuNetwork .contato:hover
+{
+    opacity: 1.0;
+}
+
+#visuNetwork .contato .foto
+{
+    width: 60px;
+    height:60px;
+    padding: 3px 3px 5px 3px;
+    display:block;
+    background:#E9EAEB;
+	margin: 5px auto;
+	border: 1px solid #E1E1E1;
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 2px 2px #D7D7D7;
+	-webkit-box-shadow: 2px 2px #D7D7D7;
+    float: left;
+}
+
+#visuNetwork .contato .email
+{
+    display: block;
+    float: left;
+    font-size: 15px;
+    color: #5C294A;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+#visuNetwork .contato .email .iconesDois
+{
+    display: block;
+    float: left;
+}
+
+#visuNetwork .contato .nome
+{
+    display: block;
+    float: left;
+    font-size: 17px;
+    color: #5C294A;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+

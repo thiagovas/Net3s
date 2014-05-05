@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBE3186E-6DAA-44E1-8EC3-9D15DC2D6033}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoTestes</RootNamespace>
+    <AssemblyName>ProjetoTestes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MongoDB.Driver, Version=1.0.0.4098, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UI\DLL\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.GridFS, Version=1.0.3744.30080, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UI\DLL\MongoDB.GridFS.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Linq">
+      <HintPath>..\UI\DLL\MongoDB.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministradorTest.cs" />
+    <Compile Include="AtomLinkTest.cs" />
+    <Compile Include="AtualizacaoMudancaPerfilTest.cs" />
+    <Compile Include="AtualizacaoNovoContatoTest.cs" />
+    <Compile Include="AtualizacaoNovoServicoTest.cs" />
+    <Compile Include="ChannelTest.cs" />
+    <Compile Include="ClsAdministradorDALTest.cs" />
+    <Compile Include="ClsAtualizacaoDALTest.cs" />
+    <Compile Include="ClsCatalogoEnderecosDALTest.cs" />
+    <Compile Include="ClsContatoDALTest.cs" />
+    <Compile Include="ClsDenunciaDALTest.cs" />
+    <Compile Include="ClsEnderecoDALTest.cs" />
+    <Compile Include="ClsNotificacaoDALTest.cs" />
+    <Compile Include="ClsOrcamentoDALTest.cs" />
+    <Compile Include="ClsRelatorioDALTest.cs" />
+    <Compile Include="ClsServicosDALTest.cs" />
+    <Compile Include="ClsUsuDALTest.cs" />
+    <Compile Include="ContatoTest.cs" />
+    <Compile Include="DenunciaTest.cs" />
+    <Compile Include="EnderecoTest.cs" />
+    <Compile Include="FeedTest.cs" />
+    <Compile Include="HistoricoServicoTest.cs" />
+    <Compile Include="ImageTest.cs" />
+    <Compile Include="ItemTest.cs" />
+    <Compile Include="NomeCompBdTest.cs" />
+    <Compile Include="NotificacaoTest.cs" />
+    <Compile Include="OcorrenciaTest.cs" />
+    <Compile Include="OrcamentoTest.cs" />
+    <Compile Include="PesquisaTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroTest.cs" />
+    <Compile Include="RelatorioTest.cs" />
+    <Compile Include="RepositoryTest.cs" />
+    <Compile Include="ServicoTest.cs" />
+    <Compile Include="UnitTestCatEnderecosDALInsert.cs" />
+    <Compile Include="UsuarioTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClsLibBLL\ClsLibBLL.csproj">
+      <Project>{B3992D1C-E7AC-4E58-94B2-83632633525C}</Project>
+      <Name>ClsLibBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClsLibDAL\ClsLibDAL.csproj">
+      <Project>{C98CA3D0-A1D5-4827-B094-0FE99BE05009}</Project>
+      <Name>ClsLibDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{23237FAA-E620-4903-A586-1B02EF1A0002}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Test References\ClsLibDAL.accessor" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

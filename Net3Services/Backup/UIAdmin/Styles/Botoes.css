@@ -1,0 +1,44 @@
+﻿.btn
+{
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    text-decoration:none;
+    background-color: #590044;
+    border: #6A0D37 solid 1px;
+    padding: 4px 8px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+.btn:hover
+{
+    /* background-color: #6e5ba4; */
+    -webkit-animation-name: purplePulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;  
+    background-color: #7B68EE; 
+    -webkit-box-shadow:: 0 0 18px #7B68EE; 
+    -moz-box-shadow: 0 0 18px #7B68EE;
+    box-shadow: 0 0 18px #7B68EE;
+    border: #9370DB solid 1px;
+}
+/* Animação do botão que faz com que o botão brilhe */
+@-webkit-keyframes purplePulse {
+    from  
+    {
+        background-color: #590044; 
+        box-shadow: 0 0 9px #6A0D37;
+        -webkit-box-shadow: 0 0 9px #6A0D37;
+        -moz-box-shadow: 0 0 9px #6A0D37; 
+    }
+    to  
+    {
+        background-color: #7B68EE; 
+        border: #9370DB solid 1px; 
+        -webkit-box-shadow: 0 0 18px #7B68EE; 
+        -moz-box-shadow: 0 0 18px #7B68EE; 
+        box-shadow: 0 0 18px #7B68EE;
+    }
+}

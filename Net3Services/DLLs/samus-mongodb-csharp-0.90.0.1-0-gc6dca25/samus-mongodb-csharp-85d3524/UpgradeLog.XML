@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MongoDB-CSharp">
+</Property><Property Name="Solution File" Value="C:\Users\Thiago\Thiago\NET3Services\Compartilhada-TortoiseHg\Net3Services\DLLs\samus-mongodb-csharp-0.90.0.1-0-gc6dca25\samus-mongodb-csharp-85d3524\MongoDB-CSharp.sln">
+</Property><Property Name="Date" Value="terça-feira, 8 de novembro de 2011">
+</Property><Property Name="Time" Value="22:26">
+</Property></Properties><Event ErrorLevel="0" Project="SimpleVB" Source="examples\SimpleVB\SimpleVB.vbproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="SimpleVB" Source="examples\SimpleVB\SimpleVB.vbproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="Simple" Source="examples\Simple\Simple.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="Simple" Source="examples\Simple\Simple.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="MongoDB" Source="source\MongoDB\MongoDB.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="MongoDB" Source="source\MongoDB\MongoDB.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="MongoDB.GridFS" Source="source\MongoDB.GridFS\MongoDB.GridFS.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="MongoDB.GridFS" Source="source\MongoDB.GridFS\MongoDB.GridFS.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="MongoDB.GridFS.Tests" Source="source\MongoDB.GridFS.Tests\MongoDB.GridFS.Tests.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="MongoDB.GridFS.Tests" Source="source\MongoDB.GridFS.Tests\MongoDB.GridFS.Tests.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="MongoDB.Tests" Source="source\MongoDB.Tests\MongoDB.Tests.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="MongoDB.Tests" Source="source\MongoDB.Tests\MongoDB.Tests.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="Benchmark" Source="tools\Benchmark\Benchmark.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="Benchmark" Source="tools\Benchmark\Benchmark.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="MongoDB-CSharp.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MongoDB-CSharp.sln" Description="Converted">
+</Event></UpgradeLog>
